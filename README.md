@@ -7,21 +7,29 @@ This repository is dedicated to a collection of Power BI projects. Each project 
 
 ### CostLivingIndex2022
 Provides insights into the cost of living index for 2022.
+- Power BI Report: [CostLivingIndex2022 Report](https://app.powerbi.com/view?r=eyJrIjoiZTJmMTg0MWEtOWRkNy00M2JlLTllNWMtMjg1ZWY5NjNmMDdkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ### HarryPotterMoviesAll
 An analysis and visualization of various aspects related to all Harry Potter movies.
+- Power BI Report: [HarryPotterMovies Report](https://app.powerbi.com/view?r=eyJrIjoiZGFlMDc0YWMtZTVjOC00MTIzLTlmZWEtMTJlZjFlYjY0ODljIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ### MilitarySpend_1988_2021
 A visual exploration of the military spending across various countries from 1988 to 2021.
+- Power BI Report: [MilitarySpend_1988_2021 Report](https://app.powerbi.com/view?r=eyJrIjoiOWIxZGUxNTQtNmJkZS00NDVlLThhNDYtZmE3NTg3NDUyN2MxIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ### Nyc_pizza_2015-2022
 Analysis of pizza consumption in New York City from 2015 to 2022.
+- Power BI Report: [Nyc_pizza_2015-2022 Report](https://app.powerbi.com/view?r=eyJrIjoiNTAxNGM2ZmQtZmY1MS00Mjk3LWI0NWEtOGVmNjMwNWY5NzcyIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ### TimeSpendByAge
 An overview of how different age groups spend their time.
+- Power BI Report: [TimeSpendByAge Report](https://app.powerbi.com/view?r=eyJrIjoiODJiMjllYjAtNDA5NS00YWJiLWExZTMtMDBiMmQ3MzU5YTAzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2Certainly)
+
 
 ### tweets_trends
 A Power BI dashboard that presents analysis and trends in tweets.
+- Power BI Report: [tweets_trends Report](https://app.powerbi.com/view?r=eyJrIjoiYjM1ZDE3YTMtN2IzOC00YWQ1LWJhNWItYTNkNWRiNWNkOTNkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+
 
 ## Getting Started
 
