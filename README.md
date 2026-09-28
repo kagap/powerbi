@@ -1,55 +1,25 @@
-# [Power BI Projects](https://github.com/kagap/powerbi)
+# 📊 Power BI Portfolio
 
-## Introduction
-This repository is dedicated to a collection of Power BI projects. Each project is contained within its own directory and includes a Power BI file along with associated data sources. These projects offer insights into various aspects like cost of living index, analysis of Harry Potter movies, military spending from 1988 to 2021, pizza consumption in NYC from 2015 to 2022, time spent by different age groups, and analysis of tweet trends.
+A collection of Power BI dashboards and reports built while exploring different public and open datasets — cost of living, military spending, pop culture, food trends, and social media activity. Each folder is a self-contained mini-project with its own `.pbix` report file and the raw data behind it.
 
-## Projects
+## 📌 What's Inside
 
-### CostLivingIndex2022
-Provides insights into the cost of living index for 2022.
-- Power BI Report: [CostLivingIndex2022 Report](https://app.powerbi.com/view?r=eyJrIjoiZTJmMTg0MWEtOWRkNy00M2JlLTllNWMtMjg1ZWY5NjNmMDdkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+- **CostLivingIndex2022/** — `costlive.pbix` dashboard exploring the 2022 cost of living index, built from `cost of living index 2022.csv`.
+- **HarryPotterMoviesAll/** — A dataset of the Harry Potter movies (`Movies.csv`, `Characters.csv`, `Chapters.csv`, `Dialogue.csv`, `Places.csv`, `Spells.csv`, plus a `Data_Dictionary.csv` and `LICENSE` for the dataset). No `.pbix` report is currently included in this folder.
+- **MilitarySpend_1988_2021/** — `top10military.pbix` report visualizing military expenditure from 1988–2021, sourced from the `SIPRI Military Expenditure Database.xlsx`.
+- **Nyc_pizza_2015-2022/** — `pizza_slices.pbix` dashboard on NYC pizza slice prices from 2015–2022, using `nyc_slice_rawdata.xlsx`.
+- **TimeSpendByAge/** — `spendtime.pbix` report on how different age groups spend their time, based on `time-spent-with-relationships-by-age-us.csv`.
+- **tweets_trends/** — `tweet_trends.pbix` dashboard analyzing tweet trends, built from a large raw tweets CSV export.
 
-### HarryPotterMoviesAll
-An analysis and visualization of various aspects related to all Harry Potter movies.
-- Power BI Report: [HarryPotterMovies Report](https://app.powerbi.com/view?r=eyJrIjoiZGFlMDc0YWMtZTVjOC00MTIzLTlmZWEtMTJlZjFlYjY0ODljIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+## 🚀 Getting Started
 
-### MilitarySpend_1988_2021
-A visual exploration of the military spending across various countries from 1988 to 2021.
-- Power BI Report: [MilitarySpend_1988_2021 Report](https://app.powerbi.com/view?r=eyJrIjoiOWIxZGUxNTQtNmJkZS00NDVlLThhNDYtZmE3NTg3NDUyN2MxIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
-
-### Nyc_pizza_2015-2022
-Analysis of pizza consumption in New York City from 2015 to 2022.
-- Power BI Report: [Nyc_pizza_2015-2022 Report](https://app.powerbi.com/view?r=eyJrIjoiNTAxNGM2ZmQtZmY1MS00Mjk3LWI0NWEtOGVmNjMwNWY5NzcyIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
-
-### TimeSpendByAge
-An overview of how different age groups spend their time.
-- Power BI Report: [TimeSpendByAge Report](https://app.powerbi.com/view?r=eyJrIjoiODJiMjllYjAtNDA5NS00YWJiLWExZTMtMDBiMmQ3MzU5YTAzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2Certainly)
-
-
-### tweets_trends
-A Power BI dashboard that presents analysis and trends in tweets.
-- Power BI Report: [tweets_trends Report](https://app.powerbi.com/view?r=eyJrIjoiYjM1ZDE3YTMtN2IzOC00YWQ1LWJhNWItYTNkNWRiNWNkOTNkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
-
-
-## Getting Started
-
-1. Clone this repository to your local environment with `git clone https://github.com/kagap/powerbi.git`
-2. Navigate into the directory of the project you are interested in.
-3. Open the Power BI file to view the data and visualizations.
+1. Clone the repository:
+   ```
+   git clone https://github.com/kagap/powerbi.git
+   ```
+2. Open the `.pbix` file inside the folder you're interested in using **Power BI Desktop**.
+3. The source data file(s) in the same folder are what each report was built from, in case you want to explore or refresh the data yourself.
 
 ## Requirements
 
-- You need to have Power BI Desktop installed on your system.
-- A basic understanding of Power BI Desktop would be beneficial to navigate and understand the projects better.
-
-## Support
-
-If you encounter any issues or have questions about this repository, please create an 'issue' in this repository's 'Issues' section.
-
-## Contribution
-
-We welcome your ideas for improvements or bug fixes in this repository! Please create a Pull Request with your changes.
-
-## License
-
-This project is released under the MIT License.
+- [Power BI Desktop](https://www.microsoft.com/en-us/power-platform/products/power-bi/desktop) to open and interact with the `.pbix` files.
