@@ -7,6 +7,7 @@ A collection of Power BI dashboards and reports built while exploring different 
 - **CostLivingIndex2022/** — `costlive.pbix` dashboard exploring the 2022 cost of living index, built from `cost of living index 2022.csv`.
 - **HarryPotterMoviesAll/** — A dataset of the Harry Potter movies (`Movies.csv`, `Characters.csv`, `Chapters.csv`, `Dialogue.csv`, `Places.csv`, `Spells.csv`, plus a `Data_Dictionary.csv` and `LICENSE` for the dataset). No `.pbix` report is currently included in this folder.
 - **MilitarySpend_1988_2021/** — `top10military.pbix` report visualizing military expenditure from 1988–2021, sourced from the `SIPRI Military Expenditure Database.xlsx`.
+- **OlistEcommerce_BrazilianMarketplace/** — `olist_ecommerce.pbix`, a relational model (orders, order items, customers, sellers, products, payments, reviews) analyzing revenue, delivery performance and review scores for the Brazilian Olist marketplace. Built from the Kaggle "Brazilian E-Commerce Public Dataset by Olist" (geolocation data excluded — not used in the model).
 - **Nyc_pizza_2015-2022/** — `pizza_slices.pbix` dashboard on NYC pizza slice prices from 2015–2022, using `nyc_slice_rawdata.xlsx`.
 - **SteamGames_PriceVsPopularity/** — `steam_games.pbix` dashboard exploring price, review score, genre and estimated ownership for 27,000+ Steam games, built from `steam.csv` (Kaggle "Steam Store Games" dataset).
 - **TimeSpendByAge/** — `spendtime.pbix` report on how different age groups spend their time, based on `time-spent-with-relationships-by-age-us.csv`.
