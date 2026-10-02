@@ -2,6 +2,8 @@
 
 Relational Power BI model analyzing revenue, delivery performance and review scores for the Olist Brazilian marketplace. Unlike the single-CSV projects elsewhere in this repo, this one uses a real multi-table star-schema model.
 
+**Live report:** [open in Power BI](https://app.powerbi.com/view?r=eyJrIjoiZTlhZWY0ZTItZDRjMy00Y2U4LWI5ZWMtZjVhZTIyMDc0NGUzIiwidCI6Ijc1ZjM5YjcwLTgxMTAtNDM0Yi1iYTU3LWFlOGY1Mzc5MjE1MCJ9) — also featured on [kagap.github.io](https://kagap.github.io).
+
 ## Data
 
 Source: [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
