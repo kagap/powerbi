@@ -5,6 +5,7 @@ A collection of Power BI dashboards and reports built while exploring different 
 ## 📌 What's Inside
 
 - **CostLivingIndex2022/** — `costlive.pbix` dashboard exploring the 2022 cost of living index, built from `cost of living index 2022.csv`.
+- **F1_Fabric/** — End-to-end Microsoft Fabric project on 75 seasons of Formula 1: PySpark notebook (bronze/silver/gold lakehouse), star-schema Direct Lake model and a three-page Power BI report. See the folder's [README](F1_Fabric/README.md) for the architecture, report screenshots and lessons learned.
 - **HarryPotterMoviesAll/** — A dataset of the Harry Potter movies (`Movies.csv`, `Characters.csv`, `Chapters.csv`, `Dialogue.csv`, `Places.csv`, `Spells.csv`, plus a `Data_Dictionary.csv` and `LICENSE` for the dataset). No `.pbix` report is currently included in this folder.
 - **MilitarySpend_1988_2021/** — `top10military.pbix` report visualizing military expenditure from 1988–2021, sourced from the `SIPRI Military Expenditure Database.xlsx`.
 - **OlistEcommerce_BrazilianMarketplace/** — `olist_ecommerce.pbix`, a relational model (orders, order items, customers, sellers, products, payments, reviews) analyzing revenue, delivery performance and review scores for the Brazilian Olist marketplace. Source data isn't committed here — see the folder's own [README](OlistEcommerce_BrazilianMarketplace/README.md) for the data model, key DAX measures, and where to download the Kaggle dataset.

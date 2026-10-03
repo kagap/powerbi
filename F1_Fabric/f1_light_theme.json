@@ -1,0 +1,53 @@
+{
+  "name": "F1 Light",
+  "dataColors": [
+    "#E10600",
+    "#00A99D",
+    "#FF8700",
+    "#3671C6",
+    "#229971",
+    "#6B7080",
+    "#E0B400",
+    "#6692FF"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#15151E",
+  "tableAccent": "#E10600",
+  "good": "#00A99D",
+  "neutral": "#E0B400",
+  "bad": "#E10600",
+  "maximum": "#E10600",
+  "center": "#E0B400",
+  "minimum": "#00A99D",
+  "textClasses": {
+    "callout": { "fontSize": 28, "fontFace": "Segoe UI Semibold", "color": "#15151E" },
+    "title": { "fontSize": 13, "fontFace": "Segoe UI Semibold", "color": "#15151E" },
+    "header": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#15151E" },
+    "label": { "fontSize": 11, "fontFace": "Segoe UI", "color": "#4B5063" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          { "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }
+        ],
+        "border": [
+          { "show": true, "color": { "solid": { "color": "#DADDE5" } }, "radius": 8 }
+        ],
+        "title": [
+          { "show": true, "fontColor": { "solid": { "color": "#15151E" } }, "fontSize": 12, "fontFamily": "Segoe UI Semibold" }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          { "color": { "solid": { "color": "#EEF0F4" } }, "transparency": 0 }
+        ],
+        "outspace": [
+          { "color": { "solid": { "color": "#E3E6EC" } }, "transparency": 0 }
+        ]
+      }
+    }
+  }
+}

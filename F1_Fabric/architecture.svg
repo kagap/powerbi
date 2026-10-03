@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" width="1100" height="300" role="img" aria-labelledby="t d">
+  <title id="t">F1 analytics architecture</title>
+  <desc id="d">Raw CSV files flow through a Spark notebook into silver Delta tables, a gold star schema, a Direct Lake semantic model and a Power BI report, all inside a Microsoft Fabric lakehouse.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5B5F6E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="300" rx="12" fill="#FFFFFF" stroke="#DADDE5"/>
+  <text x="550" y="38" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#15151E">Formula 1 analytics: Fabric lakehouse to Power BI</text>
+
+  <rect x="20" y="70" width="150" height="110" rx="8" fill="#B87333"/>
+  <text x="95" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF">Bronze</text>
+  <text x="95" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">Kaggle CSV files</text>
+  <text x="95" y="148" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">14 raw tables</text>
+
+  <rect x="210" y="70" width="150" height="110" rx="8" fill="#2E3040"/>
+  <text x="285" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF">Notebook</text>
+  <text x="285" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">PySpark</text>
+  <text x="285" y="148" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">\N to NULL, types</text>
+
+  <rect x="400" y="70" width="150" height="110" rx="8" fill="#B4B8C2"/>
+  <text x="475" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#15151E">Silver</text>
+  <text x="475" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#15151E">Delta tables</text>
+  <text x="475" y="148" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#15151E">typed and clean</text>
+
+  <rect x="590" y="70" width="150" height="110" rx="8" fill="#E0B400"/>
+  <text x="665" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#15151E">Gold</text>
+  <text x="665" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#15151E">star schema</text>
+  <text x="665" y="148" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#15151E">4 dims, 3 facts</text>
+
+  <rect x="780" y="70" width="150" height="110" rx="8" fill="#00A99D"/>
+  <text x="855" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF">Semantic model</text>
+  <text x="855" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">Direct Lake</text>
+  <text x="855" y="148" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">10 relations, DAX</text>
+
+  <rect x="970" y="70" width="110" height="110" rx="8" fill="#E10600"/>
+  <text x="1025" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#FFFFFF">Report</text>
+  <text x="1025" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">Power BI</text>
+  <text x="1025" y="148" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">3 pages</text>
+
+  <line x1="170" y1="125" x2="208" y2="125" stroke="#5B5F6E" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="125" x2="398" y2="125" stroke="#5B5F6E" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="550" y1="125" x2="588" y2="125" stroke="#5B5F6E" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="125" x2="778" y2="125" stroke="#5B5F6E" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="930" y1="125" x2="968" y2="125" stroke="#5B5F6E" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <path d="M20,205 L20,215 L930,215 L930,205" fill="none" stroke="#5B5F6E" stroke-width="1.5"/>
+  <text x="475" y="238" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#15151E">Microsoft Fabric: lakehouse f1_lakehouse (OneLake, Delta format)</text>
+  <text x="550" y="272" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#5B5F6E">1950 to 2024: 1,125 races, 26,759 results, 589,081 laps, 11,371 pit stops</text>
+</svg>
