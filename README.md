@@ -1,6 +1,6 @@
 # 📊 Power BI Portfolio
 
-A collection of Power BI dashboards and reports built while exploring different public and open datasets — cost of living, military spending, pop culture, food trends, and social media activity. Each folder is a self-contained mini-project with its own `.pbix` report file and the raw data behind it.
+A collection of nine Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
 
 ## 📌 What's Inside
 
@@ -20,9 +20,11 @@ A collection of Power BI dashboards and reports built while exploring different 
    ```
    git clone https://github.com/kagap/powerbi.git
    ```
+   The repository is about 80 MB, mostly two files: `olist_ecommerce.pbix` (42 MB) and the tweets CSV in `tweets_trends/` (17 MB).
 2. Open the `.pbix` file inside the folder you're interested in using **Power BI Desktop**.
 3. The source data file(s) in the same folder are what each report was built from, in case you want to explore or refresh the data yourself.
 
 ## Requirements
 
 - [Power BI Desktop](https://www.microsoft.com/en-us/power-platform/products/power-bi/desktop) to open and interact with the `.pbix` files.
+- `F1_Fabric` is documented as a pipeline with report screenshots and a PDF: its live report is a Direct Lake model that runs only inside Microsoft Fabric, so it cannot be opened from this repository.
