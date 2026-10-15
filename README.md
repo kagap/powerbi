@@ -4,6 +4,7 @@ A collection of nine Power BI projects built on public and open datasets: cost o
 
 ## 📌 What's Inside
 
+- **AdultCensus_IncomeOver50K/** — Power BI project (`AdultIncome.pbip`, six pages) on 32,561 adults from a 1994 US census extract: the share earning over 50K by occupation, education, marital status, sex and age. Data is stored in the model; see the folder's [README](AdultCensus_IncomeOver50K/README.md) for how to open it and where the data comes from (UCI, CC BY 4.0).
 - **CostLivingIndex2022/** — `costlive.pbix` dashboard exploring the 2022 cost of living index, built from `cost of living index 2022.csv`.
 - **F1_Fabric/** — End-to-end Microsoft Fabric project on 75 seasons of Formula 1: PySpark notebook (bronze/silver/gold lakehouse), star-schema Direct Lake model and a three-page Power BI report. See the folder's [README](F1_Fabric/README.md) for the architecture, report screenshots and lessons learned.
 - **HarryPotterMoviesAll/** — A dataset of the Harry Potter movies (`Movies.csv`, `Characters.csv`, `Chapters.csv`, `Dialogue.csv`, `Places.csv`, `Spells.csv`, plus a `Data_Dictionary.csv` and `LICENSE` for the dataset). No `.pbix` report is currently included in this folder.

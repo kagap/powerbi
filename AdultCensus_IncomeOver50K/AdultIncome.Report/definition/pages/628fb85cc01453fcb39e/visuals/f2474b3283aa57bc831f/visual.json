@@ -1,0 +1,269 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "f2474b3283aa57bc831f",
+  "position": {
+    "x": 36.0,
+    "y": 225.0,
+    "z": 5000,
+    "height": 837.0,
+    "width": 1848.0,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "age"
+                }
+              },
+              "queryRef": "AdultIncome.age",
+              "nativeQueryRef": "age"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "workclass"
+                }
+              },
+              "queryRef": "AdultIncome.workclass",
+              "nativeQueryRef": "workclass"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "education"
+                }
+              },
+              "queryRef": "AdultIncome.education",
+              "nativeQueryRef": "education"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "education_num"
+                }
+              },
+              "queryRef": "AdultIncome.education_num",
+              "nativeQueryRef": "education_num"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "marital_status"
+                }
+              },
+              "queryRef": "AdultIncome.marital_status",
+              "nativeQueryRef": "marital_status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "occupation"
+                }
+              },
+              "queryRef": "AdultIncome.occupation",
+              "nativeQueryRef": "occupation"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "relationship"
+                }
+              },
+              "queryRef": "AdultIncome.relationship",
+              "nativeQueryRef": "relationship"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "race"
+                }
+              },
+              "queryRef": "AdultIncome.race",
+              "nativeQueryRef": "race"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "sex"
+                }
+              },
+              "queryRef": "AdultIncome.sex",
+              "nativeQueryRef": "sex"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "capital_gain"
+                }
+              },
+              "queryRef": "AdultIncome.capital_gain",
+              "nativeQueryRef": "capital_gain"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "capital_loss"
+                }
+              },
+              "queryRef": "AdultIncome.capital_loss",
+              "nativeQueryRef": "capital_loss"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "hours_per_week"
+                }
+              },
+              "queryRef": "AdultIncome.hours_per_week",
+              "nativeQueryRef": "hours_per_week"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "native_country"
+                }
+              },
+              "queryRef": "AdultIncome.native_country",
+              "nativeQueryRef": "native_country"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "income"
+                }
+              },
+              "queryRef": "AdultIncome.income",
+              "nativeQueryRef": "income"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdultIncome"
+                    }
+                  },
+                  "Property": "Rows"
+                }
+              },
+              "queryRef": "AdultIncome.Rows",
+              "nativeQueryRef": "Rows"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rows'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
