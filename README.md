@@ -1,6 +1,6 @@
 # 📊 Power BI Portfolio
 
-A collection of nine Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
+A collection of twelve Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
 
 ## 📌 What's Inside
 
