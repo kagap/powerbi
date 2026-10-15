@@ -23,11 +23,11 @@
                       "Entity": "SeoulBikes"
                     }
                   },
-                  "Property": "Average rentals per hour"
+                  "Property": "Total rentals"
                 }
               },
-              "queryRef": "SeoulBikes.Average rentals per hour",
-              "nativeQueryRef": "Average rentals per hour",
+              "queryRef": "SeoulBikes.Total rentals",
+              "nativeQueryRef": "Total rentals",
               "format": "#,0"
             }
           ]
@@ -50,7 +50,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#432380'"
                     }
                   }
                 }
@@ -72,7 +72,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -81,7 +81,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E2E8F0'"
+                      "Value": "'#6D3FC0'"
                     }
                   }
                 }
@@ -90,7 +90,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "16D"
                 }
               }
             },

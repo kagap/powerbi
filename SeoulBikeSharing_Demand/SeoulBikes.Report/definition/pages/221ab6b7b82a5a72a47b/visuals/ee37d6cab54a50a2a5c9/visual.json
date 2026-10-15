@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "ee37d6cab54a50a2a5c9",
   "position": {
-    "x": 279.0,
+    "x": 249.0,
     "y": 96.0,
     "z": 20,
     "height": 966.0,
-    "width": 1605.0,
+    "width": 1635.0,
     "tabOrder": 20
   },
   "visual": {
@@ -22,7 +22,7 @@
                     "value": "Hourly count of rented public bikes in Seoul from December 2017 to November 2018 (8,760 hours), with the weather at that hour: temperature, humidity, wind, visibility, solar radiation, rain and snow, plus the season, whether the day was a holiday, and whether the rental system was working.",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -41,7 +41,7 @@
                     "textStyle": {
                       "fontSize": "15pt",
                       "fontWeight": "bold",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -52,7 +52,7 @@
                     "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -71,7 +71,7 @@
                     "textStyle": {
                       "fontSize": "15pt",
                       "fontWeight": "bold",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -82,7 +82,7 @@
                     "value": "UCI Machine Learning Repository, Seoul Bike Sharing Demand (Seoul Metropolitan Government and Data.go.kr; E and Park, 2020), licence CC BY 4.0. https://archive.ics.uci.edu/dataset/560. Column names were cleaned.",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -101,7 +101,7 @@
                     "textStyle": {
                       "fontSize": "15pt",
                       "fontWeight": "bold",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -112,18 +112,7 @@
                     "value": "Rows = COUNTROWS(SeoulBikes)",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
-                    }
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "Total rentals = SUM(SeoulBikes[Rented_Bike_Count])",
-                    "textStyle": {
-                      "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -134,7 +123,18 @@
                     "value": "Average rentals per hour = AVERAGE(SeoulBikes[Rented_Bike_Count])",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Total rentals = SUM(SeoulBikes[Rented_Bike_Count])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -145,7 +145,7 @@
                     "value": "Average temperature = AVERAGE(SeoulBikes[Temperature_C])",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -156,7 +156,7 @@
                     "value": "Average humidity = AVERAGE(SeoulBikes[Humidity_pct])",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -167,7 +167,7 @@
                     "value": "Rainy hours share = DIVIDE(CALCULATE(COUNTROWS(SeoulBikes), SeoulBikes[Rainfall_mm] > 0), COUNTROWS(SeoulBikes))",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#F6F0FF"
                     }
                   }
                 ]
@@ -194,7 +194,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#432380'"
                     }
                   }
                 }
@@ -216,7 +216,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -225,7 +225,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E2E8F0'"
+                      "Value": "'#6D3FC0'"
                     }
                   }
                 }
@@ -234,7 +234,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "16D"
                 }
               }
             },

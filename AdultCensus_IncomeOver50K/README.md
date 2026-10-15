@@ -3,7 +3,7 @@
 A six-page Power BI report on 32,561 adults from a 1994 US census extract: how the share earning more than 50,000 dollars a year changes with occupation, education, marital status, sex and age.
 24.1% of the people in the data are above that line.
 
-The report has a dark navigation panel on the left, white cards with rounded corners, a three-colour palette (navy, teal and one orange accent), no gridlines, and a collapsible **Filters pane** on the right (the funnel tab) with the category filters. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
+The report has a dark brown and orange look: the title and the page tabs share one bar at the top, square cards with an orange border, an orange and amber palette, and a collapsible **Filters pane** on the right (the funnel tab) with the category filters. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
 
 | Page | What it shows |
 |---|---|

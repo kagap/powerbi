@@ -5,13 +5,13 @@ table SeoulBikes
 		formatString: #,0
 		lineageTag: 9c1bda93-9261-5b08-bd0f-32f8f123c49f
 
-	measure 'Total rentals' = SUM(SeoulBikes[Rented_Bike_Count])
-		formatString: #,0
-		lineageTag: 8e61fbe3-1407-5527-99e9-c5dee35e6589
-
 	measure 'Average rentals per hour' = AVERAGE(SeoulBikes[Rented_Bike_Count])
 		formatString: #,0
 		lineageTag: 1a2e9495-b89e-5fb2-bad1-05ce74824d93
+
+	measure 'Total rentals' = SUM(SeoulBikes[Rented_Bike_Count])
+		formatString: #,0
+		lineageTag: 8e61fbe3-1407-5527-99e9-c5dee35e6589
 
 	measure 'Average temperature' = AVERAGE(SeoulBikes[Temperature_C])
 		formatString: 0.0

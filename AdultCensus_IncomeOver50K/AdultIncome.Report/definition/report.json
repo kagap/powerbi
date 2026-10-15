@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "pbigen_teal.json",
+      "name": "pbigen_sunset.json",
       "reportVersionAtImport": {
         "visual": "2.13.0",
         "report": "3.4.0",
@@ -129,8 +129,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "pbigen_teal.json",
-          "path": "pbigen_teal.json",
+          "name": "pbigen_sunset.json",
+          "path": "pbigen_sunset.json",
           "type": "CustomTheme"
         }
       ]

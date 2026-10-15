@@ -6,7 +6,7 @@
     "y": 210.0,
     "z": 12,
     "height": 54.0,
-    "width": 219.0,
+    "width": 189.0,
     "tabOrder": 12
   },
   "visual": {
@@ -22,7 +22,7 @@
                     "value": "Breakdown",
                     "textStyle": {
                       "fontSize": "11pt",
-                      "color": "#CBD5E0"
+                      "color": "#CDBBF0"
                     }
                   }
                 ],

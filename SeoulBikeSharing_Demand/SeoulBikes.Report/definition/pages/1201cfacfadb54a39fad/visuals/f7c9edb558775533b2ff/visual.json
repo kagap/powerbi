@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "f7c9edb558775533b2ff",
   "position": {
-    "x": 1276.5,
+    "x": 1264.5,
     "y": 279.0,
     "z": 140,
     "height": 348.0,
-    "width": 607.5,
+    "width": 619.5,
     "tabOrder": 140
   },
   "visual": {
@@ -81,6 +81,17 @@
                   "Value": "true"
                 }
               }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#CDBBF0'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -92,6 +103,17 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F6F0FF'"
+                    }
+                  }
                 }
               }
             }
@@ -115,7 +137,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#432380'"
                     }
                   }
                 }
@@ -137,7 +159,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -146,7 +168,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E2E8F0'"
+                      "Value": "'#6D3FC0'"
                     }
                   }
                 }
@@ -155,7 +177,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "16D"
                 }
               }
             },
@@ -204,7 +226,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#2D3748'"
+                      "Value": "'#F6F0FF'"
                     }
                   }
                 }

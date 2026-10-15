@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "ee37d6cab54a50a2a5c9",
   "position": {
-    "x": 279.0,
-    "y": 96.0,
-    "z": 20,
-    "height": 966.0,
-    "width": 1605.0,
-    "tabOrder": 20
+    "x": 24.0,
+    "y": 99.0,
+    "z": 10,
+    "height": 963.0,
+    "width": 1872.0,
+    "tabOrder": 10
   },
   "visual": {
     "visualType": "textbox",
@@ -22,7 +22,7 @@
                     "value": "32,561 adults from the 1994 US census extract. One row per person: age, work class, education, marital status, occupation, race, sex, capital gains and losses, hours worked per week, country, and whether income is above 50,000 dollars a year. Missing values (marked ? in the source) are left empty.",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -41,7 +41,7 @@
                     "textStyle": {
                       "fontSize": "15pt",
                       "fontWeight": "bold",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -52,7 +52,7 @@
                     "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -71,7 +71,7 @@
                     "textStyle": {
                       "fontSize": "15pt",
                       "fontWeight": "bold",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -82,7 +82,7 @@
                     "value": "UCI Machine Learning Repository, Adult (Census Income) dataset (Becker and Kohavi, 1996), licence CC BY 4.0. https://archive.ics.uci.edu/dataset/2. The fnlwgt column was dropped.",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -101,7 +101,7 @@
                     "textStyle": {
                       "fontSize": "15pt",
                       "fontWeight": "bold",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -112,7 +112,7 @@
                     "value": "Rows = COUNTROWS(AdultIncome)",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -123,7 +123,7 @@
                     "value": "High-income share = DIVIDE(CALCULATE(COUNTROWS(AdultIncome), AdultIncome[income] = \">50K\"), COUNTROWS(AdultIncome))",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -134,7 +134,7 @@
                     "value": "Average age = AVERAGE(AdultIncome[age])",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -145,7 +145,7 @@
                     "value": "Average hours per week = AVERAGE(AdultIncome[hours_per_week])",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -156,7 +156,7 @@
                     "value": "Average education years = AVERAGE(AdultIncome[education_num])",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -167,7 +167,7 @@
                     "value": "Capital gain per person = DIVIDE(SUM(AdultIncome[capital_gain]), COUNTROWS(AdultIncome))",
                     "textStyle": {
                       "fontSize": "13pt",
-                      "color": "#2D3748"
+                      "color": "#FDEBDD"
                     }
                   }
                 ]
@@ -194,7 +194,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#3A2418'"
                     }
                   }
                 }
@@ -225,7 +225,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E2E8F0'"
+                      "Value": "'#F26B1D'"
                     }
                   }
                 }
@@ -234,14 +234,14 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "0D"
                 }
               }
             },
             "width": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "2D"
                 }
               }
             }

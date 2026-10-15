@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "02efe752058f59cebb72",
   "position": {
-    "x": 279.0,
-    "y": 96.0,
-    "z": 20,
-    "height": 444.0,
-    "width": 979.5,
-    "tabOrder": 20
+    "x": 24.0,
+    "y": 162.0,
+    "z": 10,
+    "height": 413.7,
+    "width": 1141.5,
+    "tabOrder": 10
   },
   "visual": {
     "visualType": "scatterChart",
@@ -116,6 +116,41 @@
                   "Value": "false"
                 }
               }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#8FA6C8'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#8FA6C8'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -127,6 +162,17 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E8F0FB'"
+                    }
+                  }
                 }
               }
             }
@@ -150,7 +196,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#142B52'"
                     }
                   }
                 }
@@ -181,7 +227,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E2E8F0'"
+                      "Value": "'#27487F'"
                     }
                   }
                 }
@@ -190,7 +236,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "4D"
                 }
               }
             },
@@ -239,7 +285,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#2D3748'"
+                      "Value": "'#E8F0FB'"
                     }
                   }
                 }

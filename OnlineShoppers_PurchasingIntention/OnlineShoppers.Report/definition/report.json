@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "pbigen_teal.json",
+      "name": "pbigen_midnight.json",
       "reportVersionAtImport": {
         "visual": "2.13.0",
         "report": "3.4.0",
@@ -19,70 +19,6 @@
       },
       "type": "RegisteredResources"
     }
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4782627ade0651ef9bce",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "OnlineShoppers"
-              }
-            },
-            "Property": "Month"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "9e2b24cc83a25e95b065",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "OnlineShoppers"
-              }
-            },
-            "Property": "VisitorType"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "c00b913de9765bf08579",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "OnlineShoppers"
-              }
-            },
-            "Property": "Weekend"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "5a67b34f1a8d5659ad0b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "OnlineShoppers"
-              }
-            },
-            "Property": "TrafficType"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      }
-    ]
   },
   "objects": {
     "section": [
@@ -129,8 +65,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "pbigen_teal.json",
-          "path": "pbigen_teal.json",
+          "name": "pbigen_midnight.json",
+          "path": "pbigen_midnight.json",
           "type": "CustomTheme"
         }
       ]

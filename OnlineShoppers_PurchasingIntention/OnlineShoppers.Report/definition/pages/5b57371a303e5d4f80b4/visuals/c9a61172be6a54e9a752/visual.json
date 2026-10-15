@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "c9a61172be6a54e9a752",
   "position": {
-    "x": 904.5,
-    "y": 558.0,
-    "z": 50,
-    "height": 504.0,
-    "width": 979.5,
-    "tabOrder": 50
+    "x": 754.5,
+    "y": 592.5,
+    "z": 40,
+    "height": 469.5,
+    "width": 1141.5,
+    "tabOrder": 40
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -88,6 +88,17 @@
                   "Value": "false"
                 }
               }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#8FA6C8'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -101,6 +112,31 @@
                   "Value": "false"
                 }
               }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#8FA6C8'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -112,6 +148,17 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E8F0FB'"
+                    }
+                  }
                 }
               }
             }
@@ -148,7 +195,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#142B52'"
                     }
                   }
                 }
@@ -179,7 +226,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E2E8F0'"
+                      "Value": "'#27487F'"
                     }
                   }
                 }
@@ -188,7 +235,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "4D"
                 }
               }
             },
@@ -237,7 +284,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#2D3748'"
+                      "Value": "'#E8F0FB'"
                     }
                   }
                 }

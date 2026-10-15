@@ -2,14 +2,14 @@
 
 A seven-page Power BI report on the hourly demand for rental bikes in Seoul from December 2017 to November 2018 (8,760 hours, about 6.2 million rentals), together with the weather at each hour.
 
-The report has a dark navigation panel on the left, white cards with rounded corners, a three-colour palette (navy, teal and one orange accent), no gridlines, KPI cards with a small trend line (a sparkline of the last twelve months) behind the number, and a collapsible **Filters pane** on the right (the funnel tab) with the date range and category filters. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
+The report has a purple look: a narrow dark menu on the left with the active page in yellow, rounded cards without borders, a yellow, teal and pink palette, KPI cards with a small trend line (a sparkline of the last twelve months) behind the number, and a collapsible **Filters pane** on the right (the funnel tab) with the date range and category filters. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
 
 | Page | What it shows |
 |---|---|
-| Overview | Hours, total rentals, average rentals per hour, average temperature and humidity, with rentals by month, the share of hours by season, rentals by hour of the day and by holiday |
-| Breakdown | Total rentals by hour, season, holiday and whether the system was working |
+| Overview | Hours, average rentals per hour, total rentals, average temperature and humidity, with average rentals by month, the share of hours by season, rentals by hour of the day and average rentals on holidays and other days |
+| Breakdown | Average rentals per hour by hour, season, holiday and whether the system was working |
 | Compare | Total rentals against average rentals for every hour of the day, a treemap of hours by season, and rentals and temperature by group |
-| Trends | Total rentals, average rentals per hour, average temperature and the number of hours by month |
+| Trends | Average rentals per hour, total rentals, average temperature and the number of hours by month |
 | Matrix | A sorted bar of rentals by hour, a table of all measures by hour, and rentals by hour and season |
 | Details | The underlying hourly rows |
 | About | The data source, the measures with their DAX, and how to use the report |

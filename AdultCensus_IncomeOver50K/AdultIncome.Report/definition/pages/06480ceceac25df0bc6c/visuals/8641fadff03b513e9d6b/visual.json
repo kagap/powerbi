@@ -3,10 +3,10 @@
   "name": "8641fadff03b513e9d6b",
   "position": {
     "x": 21.0,
-    "y": 27.0,
+    "y": 15.0,
     "z": 2,
-    "height": 84.0,
-    "width": 219.0,
+    "height": 60.0,
+    "width": 495.0,
     "tabOrder": 2
   },
   "visual": {
@@ -21,9 +21,9 @@
                   {
                     "value": "Who earns over 50K? US census adults",
                     "textStyle": {
-                      "fontSize": "13pt",
+                      "fontSize": "14pt",
                       "fontWeight": "bold",
-                      "color": "#FFFFFF"
+                      "color": "#F26B1D"
                     }
                   }
                 ]

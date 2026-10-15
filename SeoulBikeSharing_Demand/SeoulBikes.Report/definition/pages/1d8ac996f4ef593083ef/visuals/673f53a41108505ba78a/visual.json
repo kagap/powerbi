@@ -6,7 +6,7 @@
     "y": 276.0,
     "z": 14,
     "height": 54.0,
-    "width": 219.0,
+    "width": 189.0,
     "tabOrder": 14
   },
   "visual": {
@@ -22,7 +22,7 @@
                     "value": "Compare",
                     "textStyle": {
                       "fontSize": "11pt",
-                      "color": "#FFFFFF",
+                      "color": "#1E0E3C",
                       "fontWeight": "bold"
                     }
                   }
@@ -50,7 +50,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0E7C86'"
+                      "Value": "'#F5B700'"
                     }
                   }
                 }

@@ -3,7 +3,7 @@
 A six-page Power BI report on 12,330 browsing sessions of an online shop over one year: which visitors, months and traffic sources turn into purchases.
 15.5% of the sessions end with a purchase, and the report shows where that rate is higher or lower.
 
-The report has a dark navigation panel on the left, white cards with rounded corners, a three-colour palette (navy, teal and one orange accent), no gridlines, and a collapsible **Filters pane** on the right (the funnel tab) with the category filters. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
+The report has a dark blue look: the title and four dropdown filters (Month, VisitorType, Weekend, TrafficType) in the header, a row of page tabs under it, and KPI cards and quiet charts on dark-blue cards in a steel-blue, pale-blue and mint palette. The dropdowns apply to every page. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
 
 | Page | What it shows |
 |---|---|
