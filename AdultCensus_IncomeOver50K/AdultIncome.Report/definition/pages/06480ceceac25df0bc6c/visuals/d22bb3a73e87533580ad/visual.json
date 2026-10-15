@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "d22bb3a73e87533580ad",
   "position": {
-    "x": 36.0,
-    "y": 18.0,
-    "z": 1000,
-    "height": 66.0,
-    "width": 1848.0,
-    "tabOrder": 1000
+    "x": 279.0,
+    "y": 21.0,
+    "z": 110,
+    "height": 60.0,
+    "width": 1605.0,
+    "tabOrder": 110
   },
   "visual": {
     "visualType": "textbox",
@@ -19,10 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "Who earns over 50K? US census adults - matrix",
+                    "value": "Measures in a table",
                     "textStyle": {
-                      "fontSize": "22pt",
-                      "fontWeight": "bold"
+                      "fontSize": "20pt",
+                      "fontWeight": "bold",
+                      "color": "#2D3748"
                     }
                   }
                 ]

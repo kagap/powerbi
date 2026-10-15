@@ -9,7 +9,80 @@
         "page": "2.3.1"
       },
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "pbigen_teal.json",
+      "reportVersionAtImport": {
+        "visual": "2.13.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5bdaa2654b6f51d7b13b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AdultIncome"
+              }
+            },
+            "Property": "occupation"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "2663745150895c61b936",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AdultIncome"
+              }
+            },
+            "Property": "education"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "13f8cb78862e57f4a91e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AdultIncome"
+              }
+            },
+            "Property": "marital_status"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "454641c9e7c958b8b81a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AdultIncome"
+              }
+            },
+            "Property": "sex"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
   },
   "objects": {
     "section": [
@@ -48,6 +121,17 @@
           "name": "Fluent2-CY26SU09",
           "path": "BaseThemes/Fluent2-CY26SU09.json",
           "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "pbigen_teal.json",
+          "path": "pbigen_teal.json",
+          "type": "CustomTheme"
         }
       ]
     }

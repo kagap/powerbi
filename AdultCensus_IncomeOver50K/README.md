@@ -3,14 +3,16 @@
 A six-page Power BI report on 32,561 adults from a 1994 US census extract: how the share earning more than 50,000 dollars a year changes with occupation, education, marital status, sex and age.
 24.1% of the people in the data are above that line.
 
+The report has a dark navigation panel on the left, white cards with rounded corners, a three-colour palette (navy, teal and one orange accent), no gridlines, and a collapsible **Filters pane** on the right (the funnel tab) with the category filters. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
+
 | Page | What it shows |
 |---|---|
-| Overview | People, high-income share, average age, hours per week and education years, with the share by occupation and education and the split by sex |
+| Overview | People, high-income share, average age, hours per week and education years, with the share by occupation, the split by sex, age by education and the share by marital status |
 | Breakdown | High-income share by occupation, education, marital status and sex |
-| Compare | High-income share against average age for each occupation, a treemap of people by education, and age and hours worked by group |
-| Matrix | All measures by occupation, and the share by occupation and education |
+| Compare | High-income share against average age for each occupation (scatter), a treemap of people by education, and age and hours worked by group |
+| Matrix | A sorted bar of the share by occupation, a table of all measures by occupation, and the share by occupation and education |
 | Details | The underlying rows |
-| About | The data source, the measures with their DAX, and how to use the slicers |
+| About | The data source, the measures with their DAX, and how to use the report |
 
 ## Open it
 
@@ -29,4 +31,4 @@ UCI Machine Learning Repository, *Adult* (Census Income) dataset (Becker and Koh
 ## Measures
 
 `Rows`, `High-income share`, `Average age`, `Average hours per week`, `Average education years` and `Capital gain per person` are defined in the model and listed with their DAX on the About page.
-The data is a 1994 snapshot, so the figures describe that population and not today's. The project was generated with a script and checked in Power BI Desktop 2.158.
+The data is a 1994 snapshot, so the figures describe that population and not today's. The project was generated with a script and checked in Power BI Desktop 2.158. The tooltips and the Filters pane are in the files but were not clicked through automatically, so try them once after opening.
