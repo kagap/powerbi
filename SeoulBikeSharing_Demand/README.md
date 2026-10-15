@@ -2,15 +2,17 @@
 
 A seven-page Power BI report on the hourly demand for rental bikes in Seoul from December 2017 to November 2018 (8,760 hours, about 6.2 million rentals), together with the weather at each hour.
 
+The report has a dark navigation panel on the left, white cards with rounded corners, a three-colour palette (navy, teal and one orange accent), no gridlines, KPI cards with a small trend line (a sparkline of the last twelve months) behind the number, and a collapsible **Filters pane** on the right (the funnel tab) with the date range and category filters. Hovering over a bar, slice or point shows a small summary card (a tooltip page).
+
 | Page | What it shows |
 |---|---|
-| Overview | Hours, total rentals, average rentals per hour, average temperature and humidity, with rentals by month, by hour of the day, by season and the holiday split |
+| Overview | Hours, total rentals, average rentals per hour, average temperature and humidity, with rentals by month, the share of hours by season, rentals by hour of the day and by holiday |
 | Breakdown | Total rentals by hour, season, holiday and whether the system was working |
 | Compare | Total rentals against average rentals for every hour of the day, a treemap of hours by season, and rentals and temperature by group |
 | Trends | Total rentals, average rentals per hour, average temperature and the number of hours by month |
-| Matrix | All measures by hour, and rentals by hour and season |
+| Matrix | A sorted bar of rentals by hour, a table of all measures by hour, and rentals by hour and season |
 | Details | The underlying hourly rows |
-| About | The data source, the measures with their DAX, and how to use the slicers |
+| About | The data source, the measures with their DAX, and how to use the report |
 
 ## Open it
 
@@ -30,4 +32,4 @@ Column names were cleaned (for example `Temperature(°C)` became `Temperature_C`
 ## Measures
 
 `Rows`, `Total rentals`, `Average rentals per hour`, `Average temperature`, `Average humidity` and `Rainy hours share` are defined in the model and listed with their DAX on the About page.
-The project was generated with a script and checked in Power BI Desktop 2.158; the layout is a starting point that you can adjust.
+The project was generated with a script and checked in Power BI Desktop 2.158. The tooltips and the Filters pane are in the files but were not clicked through automatically, so try them once after opening.
