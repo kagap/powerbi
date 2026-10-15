@@ -1,0 +1,269 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "f2474b3283aa57bc831f",
+  "position": {
+    "x": 36.0,
+    "y": 225.0,
+    "z": 5000,
+    "height": 837.0,
+    "width": 1848.0,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Administrative"
+                }
+              },
+              "queryRef": "OnlineShoppers.Administrative",
+              "nativeQueryRef": "Administrative"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Administrative_Duration"
+                }
+              },
+              "queryRef": "OnlineShoppers.Administrative_Duration",
+              "nativeQueryRef": "Administrative_Duration"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Informational"
+                }
+              },
+              "queryRef": "OnlineShoppers.Informational",
+              "nativeQueryRef": "Informational"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Informational_Duration"
+                }
+              },
+              "queryRef": "OnlineShoppers.Informational_Duration",
+              "nativeQueryRef": "Informational_Duration"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "ProductRelated"
+                }
+              },
+              "queryRef": "OnlineShoppers.ProductRelated",
+              "nativeQueryRef": "ProductRelated"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "ProductRelated_Duration"
+                }
+              },
+              "queryRef": "OnlineShoppers.ProductRelated_Duration",
+              "nativeQueryRef": "ProductRelated_Duration"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "BounceRates"
+                }
+              },
+              "queryRef": "OnlineShoppers.BounceRates",
+              "nativeQueryRef": "BounceRates"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "ExitRates"
+                }
+              },
+              "queryRef": "OnlineShoppers.ExitRates",
+              "nativeQueryRef": "ExitRates"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "PageValues"
+                }
+              },
+              "queryRef": "OnlineShoppers.PageValues",
+              "nativeQueryRef": "PageValues"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "SpecialDay"
+                }
+              },
+              "queryRef": "OnlineShoppers.SpecialDay",
+              "nativeQueryRef": "SpecialDay"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Month"
+                }
+              },
+              "queryRef": "OnlineShoppers.Month",
+              "nativeQueryRef": "Month"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "OperatingSystems"
+                }
+              },
+              "queryRef": "OnlineShoppers.OperatingSystems",
+              "nativeQueryRef": "OperatingSystems"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Browser"
+                }
+              },
+              "queryRef": "OnlineShoppers.Browser",
+              "nativeQueryRef": "Browser"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Region"
+                }
+              },
+              "queryRef": "OnlineShoppers.Region",
+              "nativeQueryRef": "Region"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Rows"
+                }
+              },
+              "queryRef": "OnlineShoppers.Rows",
+              "nativeQueryRef": "Rows"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rows'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

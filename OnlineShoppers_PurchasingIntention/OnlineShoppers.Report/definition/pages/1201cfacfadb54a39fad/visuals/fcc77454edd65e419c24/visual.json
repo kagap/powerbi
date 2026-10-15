@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "fcc77454edd65e419c24",
+  "position": {
+    "x": 784.8,
+    "y": 225.0,
+    "z": 7000,
+    "height": 126.0,
+    "width": 350.4,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Purchasing sessions"
+                }
+              },
+              "queryRef": "OnlineShoppers.Purchasing sessions",
+              "nativeQueryRef": "Purchasing sessions",
+              "format": "#,0"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "OnlineShoppers"
+                  }
+                },
+                "Property": "Purchasing sessions"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

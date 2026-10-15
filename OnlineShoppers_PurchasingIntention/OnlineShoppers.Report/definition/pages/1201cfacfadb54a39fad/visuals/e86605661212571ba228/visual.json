@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "e86605661212571ba228",
+  "position": {
+    "x": 1533.6,
+    "y": 225.0,
+    "z": 9000,
+    "height": 126.0,
+    "width": 350.4,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OnlineShoppers"
+                    }
+                  },
+                  "Property": "Average bounce rate"
+                }
+              },
+              "queryRef": "OnlineShoppers.Average bounce rate",
+              "nativeQueryRef": "Average bounce rate",
+              "format": "0.0%"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "OnlineShoppers"
+                  }
+                },
+                "Property": "Average bounce rate"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
