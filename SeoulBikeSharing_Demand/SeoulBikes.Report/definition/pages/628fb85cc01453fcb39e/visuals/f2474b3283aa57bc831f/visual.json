@@ -1,0 +1,269 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "f2474b3283aa57bc831f",
+  "position": {
+    "x": 36.0,
+    "y": 225.0,
+    "z": 5000,
+    "height": 837.0,
+    "width": 1848.0,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "SeoulBikes.Date",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Rented_Bike_Count"
+                }
+              },
+              "queryRef": "SeoulBikes.Rented_Bike_Count",
+              "nativeQueryRef": "Rented_Bike_Count"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Hour"
+                }
+              },
+              "queryRef": "SeoulBikes.Hour",
+              "nativeQueryRef": "Hour"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Temperature_C"
+                }
+              },
+              "queryRef": "SeoulBikes.Temperature_C",
+              "nativeQueryRef": "Temperature_C"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Humidity_pct"
+                }
+              },
+              "queryRef": "SeoulBikes.Humidity_pct",
+              "nativeQueryRef": "Humidity_pct"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Wind_speed_ms"
+                }
+              },
+              "queryRef": "SeoulBikes.Wind_speed_ms",
+              "nativeQueryRef": "Wind_speed_ms"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Visibility_10m"
+                }
+              },
+              "queryRef": "SeoulBikes.Visibility_10m",
+              "nativeQueryRef": "Visibility_10m"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Dew_point_C"
+                }
+              },
+              "queryRef": "SeoulBikes.Dew_point_C",
+              "nativeQueryRef": "Dew_point_C"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Solar_radiation_MJ_m2"
+                }
+              },
+              "queryRef": "SeoulBikes.Solar_radiation_MJ_m2",
+              "nativeQueryRef": "Solar_radiation_MJ_m2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Rainfall_mm"
+                }
+              },
+              "queryRef": "SeoulBikes.Rainfall_mm",
+              "nativeQueryRef": "Rainfall_mm"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Snowfall_cm"
+                }
+              },
+              "queryRef": "SeoulBikes.Snowfall_cm",
+              "nativeQueryRef": "Snowfall_cm"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Seasons"
+                }
+              },
+              "queryRef": "SeoulBikes.Seasons",
+              "nativeQueryRef": "Seasons"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Holiday"
+                }
+              },
+              "queryRef": "SeoulBikes.Holiday",
+              "nativeQueryRef": "Holiday"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Functioning_Day"
+                }
+              },
+              "queryRef": "SeoulBikes.Functioning_Day",
+              "nativeQueryRef": "Functioning_Day"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SeoulBikes"
+                    }
+                  },
+                  "Property": "Rows"
+                }
+              },
+              "queryRef": "SeoulBikes.Rows",
+              "nativeQueryRef": "Rows"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rows'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
