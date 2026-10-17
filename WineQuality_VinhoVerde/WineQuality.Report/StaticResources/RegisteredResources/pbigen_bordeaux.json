@@ -1,0 +1,70 @@
+{
+  "name": "pbigen bordeaux",
+  "dataColors": [
+    "#8C2740",
+    "#C9A227",
+    "#5E7F6B",
+    "#D98E73",
+    "#4A1424",
+    "#9DB4A4",
+    "#E3C770",
+    "#B86B7E"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#2B1A1F",
+  "tableAccent": "#8C2740",
+  "good": "#8C2740",
+  "neutral": "#7A6168",
+  "bad": "#C9A227",
+  "maximum": "#8C2740",
+  "center": "#7A6168",
+  "minimum": "#C9A227",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#8C2740"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#2B1A1F"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#2B1A1F"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#7A6168"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F6F1EE"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#E5E7EB"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # 📊 Power BI Portfolio
 
-A collection of fourteen Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
+A collection of fifteen Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
 
 ## 📌 What's Inside
 
@@ -18,6 +18,7 @@ A collection of fourteen Power BI projects built on public and open datasets: co
 - **SteamGames_PriceVsPopularity/** — `steam_games.pbix` dashboard exploring price, review score, genre and estimated ownership for 27,000+ Steam games, built from `steam.csv` (Kaggle "Steam Store Games" dataset).
 - **TimeSpendByAge/** — `spendtime.pbix` report on how different age groups spend their time, based on `time-spent-with-relationships-by-age-us.csv`.
 - **tweets_trends/** — `tweet_trends.pbix` dashboard analyzing tweet trends, built from a large raw tweets CSV export.
+- **WineQuality_VinhoVerde/** — Power BI project (`WineQuality.pbip`, six pages, warm white with a burgundy menu on the right) on 6,497 Portuguese red and white Vinho Verde wines with eleven laboratory measurements and a taster's quality score: a gauge, a multi-row card, small multiples of the ingredients by quality, and red against white. Data is stored in the model; see the folder's [README](WineQuality_VinhoVerde/README.md) (UCI, CC BY 4.0).
 
 ## 🚀 Getting Started
 
