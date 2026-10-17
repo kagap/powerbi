@@ -1,6 +1,6 @@
 # 📊 Power BI Portfolio
 
-A collection of twelve Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
+A collection of thirteen Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
 
 ## 📌 What's Inside
 
@@ -8,6 +8,7 @@ A collection of twelve Power BI projects built on public and open datasets: cost
 - **CostLivingIndex2022/** — `costlive.pbix` dashboard exploring the 2022 cost of living index, built from `cost of living index 2022.csv`.
 - **F1_Fabric/** — End-to-end Microsoft Fabric project on 75 seasons of Formula 1: PySpark notebook (bronze/silver/gold lakehouse), star-schema Direct Lake model and a three-page Power BI report. See the folder's [README](F1_Fabric/README.md) for the architecture, report screenshots and lessons learned.
 - **HarryPotterMoviesAll/** — A dataset of the Harry Potter movies (`Movies.csv`, `Characters.csv`, `Chapters.csv`, `Dialogue.csv`, `Places.csv`, `Spells.csv`, plus a `Data_Dictionary.csv` and `LICENSE` for the dataset). No `.pbix` report is currently included in this folder.
+- **MetroTraffic_I94Volume/** — Power BI project (`TrafficVolume.pbip`, six pages, dark neon look with the page tabs along the bottom) on hourly traffic on Interstate 94 near Minneapolis and St Paul (40,575 hours, 2012-2018) with the weather: a weekday-by-hour heat map, a combo chart, a gauge, a waterfall and a ribbon chart. Data is stored in the model; see the folder's [README](MetroTraffic_I94Volume/README.md) (UCI, CC BY 4.0).
 - **MilitarySpend_1988_2021/** — `top10military.pbix` report visualizing military expenditure from 1988–2021, sourced from the `SIPRI Military Expenditure Database.xlsx`.
 - **OlistEcommerce_BrazilianMarketplace/** — `olist_ecommerce.pbix`, a relational model (orders, order items, customers, sellers, products, payments, reviews) analyzing revenue, delivery performance and review scores for the Brazilian Olist marketplace. Source data isn't committed here — see the folder's own [README](OlistEcommerce_BrazilianMarketplace/README.md) for the data model, key DAX measures, and where to download the Kaggle dataset.
 - **Nyc_pizza_2015-2022/** — `pizza_slices.pbix` dashboard on NYC pizza slice prices from 2015–2022, using `nyc_slice_rawdata.xlsx`.

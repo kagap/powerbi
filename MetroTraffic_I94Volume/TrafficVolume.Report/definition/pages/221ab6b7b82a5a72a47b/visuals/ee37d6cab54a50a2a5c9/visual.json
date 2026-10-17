@@ -1,0 +1,279 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 81.0,
+    "z": 10,
+    "height": 921.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Hourly traffic volume on the westbound lane of Interstate 94 near Minneapolis and St Paul (the Minnesota DoT automatic recorder, station 301), from October 2012 to September 2018, with the weather and holidays for each hour. One row is one hour; Hour, Weekday and Daypart are derived from the timestamp.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "UCI Machine Learning Repository, Metro Interstate Traffic Volume (John Hogue), licence CC BY 4.0. https://archive.ics.uci.edu/dataset/492. Prepared: several weather records sharing one timestamp were reduced to the first (48,204 rows became 40,575 distinct hours), temperatures of 0 K and one rainfall of 9,831 mm were treated as missing, and temperature was converted from kelvin to Celsius. The record has no data at all for September 2014 to May 2015, and August 2014 and June 2015 are thin, so totals dip there; averages per hour are not affected.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hours of data = COUNTROWS(TrafficVolume)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average traffic per hour = AVERAGE(TrafficVolume[Traffic_volume])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Total vehicles = SUM(TrafficVolume[Traffic_volume])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average temperature = AVERAGE(TrafficVolume[Temperature_C])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Busiest hour = MAX(TrafficVolume[Traffic_volume])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Rainy hours share = DIVIDE(CALCULATE(COUNTROWS(TrafficVolume), TrafficVolume[Rain_mm] > 0), COUNTROWS(TrafficVolume))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E9ECFF"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E1224'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#27306A'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
