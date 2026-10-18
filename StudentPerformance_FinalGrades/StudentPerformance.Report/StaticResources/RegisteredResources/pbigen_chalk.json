@@ -1,0 +1,70 @@
+{
+  "name": "pbigen chalk",
+  "dataColors": [
+    "#F2C14E",
+    "#F28DA6",
+    "#7FD1B9",
+    "#8EC5FF",
+    "#E6E1D3",
+    "#F29E6D",
+    "#B8A9FF",
+    "#9BD16B"
+  ],
+  "background": "#1F403A",
+  "foreground": "#F4F1E8",
+  "tableAccent": "#F2C14E",
+  "good": "#F2C14E",
+  "neutral": "#A9C2B8",
+  "bad": "#F28DA6",
+  "maximum": "#F2C14E",
+  "center": "#A9C2B8",
+  "minimum": "#F28DA6",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F2C14E"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F4F1E8"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F4F1E8"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#A9C2B8"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#16302B"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#102521"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

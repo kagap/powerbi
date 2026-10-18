@@ -1,0 +1,279 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 108.0,
+    "z": 10,
+    "height": 954.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "1,044 course enrolments of secondary-school students in two Portuguese schools in 2005-2006: 395 in mathematics and 649 in Portuguese language. About 380 students take both subjects, so a student can appear twice. For each enrolment: age, family background (parents' education and jobs), study time, past failures, support, free time, going out, alcohol, health, absences and the grades of the first period, the second period and the final grade (0 to 20).",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "UCI Machine Learning Repository, Student Performance (Cortez and Silva, 2008), licence CC BY 4.0. https://archive.ics.uci.edu/dataset/320. Prepared: the two files were combined with a Subject column, coded answers (1 to 5, 1 to 4) were replaced by labelled levels that sort in order, a Result column (passed with a final grade of 10 or more) and an Absence band were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Enrolments = COUNTROWS(StudentPerformance)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average final grade = AVERAGE(StudentPerformance[Final_grade])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Pass rate = DIVIDE(CALCULATE(COUNTROWS(StudentPerformance), StudentPerformance[Result] = \"Passed\"), COUNTROWS(StudentPerformance))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average absences = AVERAGE(StudentPerformance[Absences])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average first-period grade = AVERAGE(StudentPerformance[Grade_period_1])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Aiming for higher education = DIVIDE(CALCULATE(COUNTROWS(StudentPerformance), StudentPerformance[Wants_higher_education] = \"Yes\"), COUNTROWS(StudentPerformance))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F4F1E8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1F403A'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2F5A52'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
