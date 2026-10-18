@@ -1,0 +1,279 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 324.0,
+    "y": 81.0,
+    "z": 10,
+    "height": 981.0,
+    "width": 1572.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "43,824 hourly readings from 1 January 2010 to 31 December 2014: fine particles (PM2.5, micrograms per cubic metre) measured at the US embassy in Beijing, with the weather at each hour: temperature, dew point, pressure, wind direction and cumulated wind speed, and hours of snow and rain. PM2.5 is missing for 2,067 hours (4.7%); those hours keep an empty PM2.5 and fall in the band No reading.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "UCI Machine Learning Repository, Beijing PM2.5 Data (Liang et al., 2015), licence CC BY 4.0. https://archive.ics.uci.edu/dataset/381. Prepared: the date was assembled from year, month and day; concentration bands follow the US EPA breakpoints (applied to hourly readings, which is an approximation of the 24-hour standard); the heating season is 15 November to 15 March, when Beijing's central heating runs; wind directions were spelled out (cv means calm or variable).",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hours of data = COUNTROWS(BeijingPM25)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average PM2.5 = AVERAGE(BeijingPM25[PM25])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of hours above 55 = DIVIDE(CALCULATE(COUNTROWS(BeijingPM25), BeijingPM25[PM25] > 55.4), CALCULATE(COUNTROWS(BeijingPM25), NOT(ISBLANK(BeijingPM25[PM25]))))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average temperature = AVERAGE(BeijingPM25[Temperature_C])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Worst hour = MAX(BeijingPM25[PM25])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average wind speed = AVERAGE(BeijingPM25[Wind_speed])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8ECF1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2A2F38'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#3C434F'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
