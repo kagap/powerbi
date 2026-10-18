@@ -1,0 +1,279 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 123.0,
+    "z": 10,
+    "height": 939.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "1,197 team-days from a garment factory between 1 January and 11 March 2015. One row is one team on one day, in the sewing or the finishing department: the targeted and the actual productivity, the standard minute value of the work, overtime, incentive pay, idle time, style changes and the number of workers. A team-day meets its target when actual productivity is at least the target.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "UCI Machine Learning Repository, Productivity Prediction of Garment Employees (Imran et al., 2019), licence CC BY 4.0. https://archive.ics.uci.edu/dataset/597. Prepared: department names were cleaned (sweing and finishing with a trailing space), days and weeks were numbered so they sort, the Target outcome and the incentive and overtime bands were added. Work in progress is empty for the finishing department in the source.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Team days = COUNTROWS(GarmentProductivity)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average productivity = AVERAGE(GarmentProductivity[Actual_productivity])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Target met share = DIVIDE(CALCULATE(COUNTROWS(GarmentProductivity), GarmentProductivity[Target] = \"Met\"), COUNTROWS(GarmentProductivity))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average target = AVERAGE(GarmentProductivity[Targeted_productivity])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Overtime per worker (min) = DIVIDE(SUM(GarmentProductivity[Overtime_min]), SUM(GarmentProductivity[Workers]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average incentive = AVERAGE(GarmentProductivity[Incentive])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#263238"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D5DCE1'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
