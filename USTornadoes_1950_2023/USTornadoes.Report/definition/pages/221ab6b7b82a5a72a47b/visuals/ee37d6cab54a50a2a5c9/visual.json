@@ -1,0 +1,301 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 186.0,
+    "y": 111.0,
+    "z": 20,
+    "height": 951.0,
+    "width": 1710.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "70,022 tornadoes reported in the United States from 1950 to 2023: the date, hour, state, strength on the (Enhanced) Fujita scale, deaths, injuries, path length and width, and where each one touched down. Strength is the F scale until 2006 and the EF scale from 2007, grouped here as weak (0-1), strong (2-3) and violent (4-5); 1,024 tornadoes have no rating.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "NOAA Storm Prediction Center, Severe Weather Database (1950-2023 actual tornadoes), public domain. https://www.spc.noaa.gov/wcm/#data. Prepared: state codes were spelled out, the unrated tornadoes (code -9) are a group of their own, zero coordinates were treated as missing, and the dollar-loss columns were left out because their units changed over the years. Counts before the 1970s are lower because weak tornadoes were less often reported.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Tornadoes = COUNTROWS(USTornadoes)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Deaths = SUM(USTornadoes[Fatalities])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Total injuries = SUM(USTornadoes[Injuries])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average path length (mi) = AVERAGE(USTornadoes[Length_miles])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Violent tornadoes (EF4-5) = CALCULATE(COUNTROWS(USTornadoes), USTornadoes[Strength] = \"3 Violent (EF4-5)\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Deadly tornado share = DIVIDE(CALCULATE(COUNTROWS(USTornadoes), USTornadoes[Fatalities] > 0), COUNTROWS(USTornadoes))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average path width (yd) = AVERAGE(USTornadoes[Width_yards])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "State tile = SELECTEDVALUE(USTornadoes[State_code])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E6EEF8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#18283A'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2A4058'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
