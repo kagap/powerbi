@@ -1,0 +1,301 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 93.0,
+    "z": 10,
+    "height": 897.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "49,868 vehicle variants tested by the US EPA for model years 1984 to 2026: make, model, class, fuel type, drive, transmission, engine size, fuel economy in miles per gallon, tailpipe CO2, the EPA's estimate of annual fuel cost and, for electric cars, the range. A row is a model variant, not a car sold, so shares describe the choice on offer and not sales.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "US Department of Energy and US EPA, Fuel Economy Data (fueleconomy.gov, vehicles.csv), public domain, retrieved on 19 October 2026 from https://www.fueleconomy.gov/feg/ws/. Prepared: model year 2027 (539 early listings) was left out; vehicle classes, drive and fuel types were simplified; the electric range and kWh per 100 miles are kept only for electric cars and the annual fuel cost of hydrogen cars (listed as zero) is left empty. Miles per gallon of electric cars is an equivalent (MPGe), so the MPG measures leave electric cars out.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Vehicles = COUNTROWS(FuelEconomy)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average MPG (not electric) = CALCULATE(AVERAGE(FuelEconomy[MPG_combined]), FuelEconomy[Fuel_type] <> \"Electric\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average CO2 (g per mile) = AVERAGE(FuelEconomy[CO2_g_per_mile])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average annual fuel cost ($) = AVERAGE(FuelEconomy[Annual_fuel_cost])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average EV range (mi) = AVERAGE(FuelEconomy[EV_range_miles])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Electric share of models = DIVIDE(CALCULATE(COUNTROWS(FuelEconomy), FuelEconomy[Fuel_type] = \"Electric\"), COUNTROWS(FuelEconomy))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hybrid and electric share = DIVIDE(CALCULATE(COUNTROWS(FuelEconomy), FuelEconomy[Fuel_type] IN {\"Electric\", \"Hybrid\", \"Plug-in hybrid\"}), COUNTROWS(FuelEconomy))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Electric models = CALCULATE(COUNTROWS(FuelEconomy), FuelEconomy[Fuel_type] = \"Electric\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1E24"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E2D8C6'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
