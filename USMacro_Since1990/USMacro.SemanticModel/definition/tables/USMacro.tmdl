@@ -1,0 +1,219 @@
+table USMacro
+	lineageTag: 02f56104-fa70-5cfc-acb9-e1d0c2808200
+
+	measure Months = COUNTROWS(USMacro)
+		formatString: #,0
+		lineageTag: ed6c1450-9849-5f9d-aeb2-8a5faab1008c
+
+	measure 'Unemployment (latest)' = CALCULATE(AVERAGE(USMacro[Unemployment_rate]), USMacro[Date] = MAX(USMacro[Date]))
+		formatString: 0.0\%
+		lineageTag: 06dab79a-fa31-5f65-885a-02303342f1ad
+
+	measure 'Fed funds (latest)' = CALCULATE(AVERAGE(USMacro[Fed_funds_rate]), USMacro[Date] = MAX(USMacro[Date]))
+		formatString: 0.00\%
+		lineageTag: 74503f4b-5cb4-5c00-aea1-b9766dad7f25
+
+	measure '10-year yield (latest)' = CALCULATE(AVERAGE(USMacro[Treasury_10y]), USMacro[Date] = MAX(USMacro[Date]))
+		formatString: 0.00\%
+		lineageTag: 22426dab-17c6-582d-a6eb-b9f0ac47e61f
+
+	measure 'Inflation (latest, YoY)' = CALCULATE(AVERAGE(USMacro[Inflation_yoy]), USMacro[Date] = MAX(USMacro[Date]))
+		formatString: 0.0\%
+		lineageTag: ea9bf722-35ea-52f5-b4bb-2eafbba425b4
+
+	measure 'Mortgage 30y (latest)' = CALCULATE(AVERAGE(USMacro[Mortgage_30y]), USMacro[Date] = MAX(USMacro[Date]))
+		formatString: 0.00\%
+		lineageTag: df3cb254-57ca-59c3-b070-ce6957a12b6a
+
+	measure 'Payroll growth (latest, YoY)' = CALCULATE(AVERAGE(USMacro[Payroll_growth_yoy]), USMacro[Date] = MAX(USMacro[Date]))
+		formatString: 0.0\%
+		lineageTag: 2efc79ad-e025-5fb1-84ba-38da729d1c13
+
+	measure 'Unemployment, change vs a year earlier' = CALCULATE(AVERAGE(USMacro[Unemployment_rate]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Unemployment_rate]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))
+		formatString: +0.0;-0.0;0.0
+		lineageTag: 45cbe501-3cb8-5931-b813-66606d5aa85e
+
+	measure 'Fed funds, change vs a year earlier' = CALCULATE(AVERAGE(USMacro[Fed_funds_rate]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Fed_funds_rate]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))
+		formatString: +0.00;-0.00;0.00
+		lineageTag: 699c6a6f-3f39-5795-b4b8-8dd250424f7b
+
+	measure '10-year yield, change vs a year earlier' = CALCULATE(AVERAGE(USMacro[Treasury_10y]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Treasury_10y]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))
+		formatString: +0.00;-0.00;0.00
+		lineageTag: 615a837c-7016-5263-be0e-ae87b9cd7224
+
+	measure 'Inflation, change vs a year earlier' = CALCULATE(AVERAGE(USMacro[Inflation_yoy]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Inflation_yoy]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))
+		formatString: +0.0;-0.0;0.0
+		lineageTag: d88fc89d-5224-5aa8-b387-99635d1e763a
+
+	measure 'Mortgage, change vs a year earlier' = CALCULATE(AVERAGE(USMacro[Mortgage_30y]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Mortgage_30y]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))
+		formatString: +0.00;-0.00;0.00
+		lineageTag: 55481baa-908b-56cb-ac86-8a264ff19ec3
+
+	measure 'Payroll growth, change vs a year earlier' = CALCULATE(AVERAGE(USMacro[Payroll_growth_yoy]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Payroll_growth_yoy]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))
+		formatString: +0.0;-0.0;0.0
+		lineageTag: 0aa7a858-3a20-5c2a-ab3e-1d62b0a53e12
+
+	measure 'Average unemployment' = AVERAGE(USMacro[Unemployment_rate])
+		formatString: 0.0
+		lineageTag: 4b7c9bdd-4d2d-5266-afc2-c8e90cbd4065
+
+	measure 'Average inflation (YoY)' = AVERAGE(USMacro[Inflation_yoy])
+		formatString: 0.0
+		lineageTag: 6418939d-3277-58b1-884c-704e8373e091
+
+	measure 'Average Fed funds rate' = AVERAGE(USMacro[Fed_funds_rate])
+		formatString: 0.00
+		lineageTag: d961a6ca-f765-596a-a0bb-3796fb498bd5
+
+	measure 'Average 10-year yield' = AVERAGE(USMacro[Treasury_10y])
+		formatString: 0.00
+		lineageTag: 43109fae-dc9e-570b-8cab-815b2b14615a
+
+	measure 'Average 2-year yield' = AVERAGE(USMacro[Treasury_2y])
+		formatString: 0.00
+		lineageTag: 3e09d9be-9c15-5d5d-943f-6c968b8a4d84
+
+	measure 'Average mortgage rate' = AVERAGE(USMacro[Mortgage_30y])
+		formatString: 0.00
+		lineageTag: 5793c236-2b2a-5321-99e3-fadaf7ca337b
+
+	measure 'Average 10y-2y spread' = AVERAGE(USMacro[Yield_spread_10y_2y])
+		formatString: 0.00
+		lineageTag: 3313d6a6-33d6-5c97-b1e3-6dc20f735e3b
+
+	measure 'Average payroll growth (YoY)' = AVERAGE(USMacro[Payroll_growth_yoy])
+		formatString: 0.0
+		lineageTag: 6e5a2227-6f14-5234-9387-161f1bcb85ee
+
+	column Date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 01cde66e-679e-5fef-aa03-e42ec75aa68b
+		summarizeBy: none
+		sourceColumn: "Date"
+
+	column Decade
+		dataType: string
+		lineageTag: 7494bfbc-26db-57ca-9067-dcc0003e90a4
+		summarizeBy: none
+		sourceColumn: "Decade"
+
+	column Recession
+		dataType: string
+		lineageTag: 25456ebc-5af8-548d-835d-b0010dcb3e59
+		summarizeBy: none
+		sourceColumn: "Recession"
+
+	column Inflation_band
+		dataType: string
+		lineageTag: 9f0c99a6-5839-5b40-b472-be18dfcd9c9a
+		summarizeBy: none
+		sourceColumn: "Inflation_band"
+
+	column Fed_stance
+		dataType: string
+		lineageTag: 705a7f3a-2c04-5e66-9837-3caeaa78553d
+		summarizeBy: none
+		sourceColumn: "Fed_stance"
+
+	column Unemployment_rate
+		dataType: double
+		formatString: #,0.00
+		lineageTag: a2a58af1-1a6f-56d9-98df-fc8b5c7afe5f
+		summarizeBy: none
+		sourceColumn: "Unemployment_rate"
+
+	column Fed_funds_rate
+		dataType: double
+		formatString: #,0.00
+		lineageTag: df493093-8255-5f34-b6db-b795d03fec9e
+		summarizeBy: none
+		sourceColumn: "Fed_funds_rate"
+
+	column Treasury_10y
+		dataType: double
+		formatString: #,0.00
+		lineageTag: d3c9848e-fbd0-5a97-b06a-23abe6a02c4e
+		summarizeBy: none
+		sourceColumn: "Treasury_10y"
+
+	column Treasury_2y
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 6812303b-3789-5da0-a668-340369136357
+		summarizeBy: none
+		sourceColumn: "Treasury_2y"
+
+	column Yield_spread_10y_2y
+		dataType: double
+		formatString: #,0.00
+		lineageTag: f7b60149-353d-5192-8a74-b11f43037837
+		summarizeBy: none
+		sourceColumn: "Yield_spread_10y_2y"
+
+	column Mortgage_30y
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 944b4010-4b53-5e11-90d0-e957daf4c4dd
+		summarizeBy: none
+		sourceColumn: "Mortgage_30y"
+
+	column CPI_index
+		dataType: double
+		formatString: #,0.00
+		lineageTag: b20fd0ad-4523-59d2-85f8-4513c77d1680
+		summarizeBy: none
+		sourceColumn: "CPI_index"
+
+	column Inflation_yoy
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 8899024b-2dbe-565e-8364-dfa1048cb32e
+		summarizeBy: none
+		sourceColumn: "Inflation_yoy"
+
+	column Payrolls_thousands
+		dataType: double
+		formatString: #,0.00
+		lineageTag: af325a13-4e53-59fd-b251-80f4a4a70058
+		summarizeBy: none
+		sourceColumn: "Payrolls_thousands"
+
+	column Payroll_growth_yoy
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 892c1cef-cc11-52a4-af1e-829866bb32dc
+		summarizeBy: none
+		sourceColumn: "Payroll_growth_yoy"
+
+	column Month
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: e61ee1d4-fbb8-5b1a-ade5-d1ff1433b038
+		summarizeBy: none
+		sourceColumn: "Month"
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 77dfdfd7-1290-5bf1-9c28-b665ad9fa3df
+		summarizeBy: none
+		sourceColumn: "Year"
+
+	partition USMacro = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(Binary.Decompress(Binary.FromText("H4sIAAAAAAACCq2dXY9dR3ae7wPkP/DGwATpblSt+r72JLCBJDAMJ0CuBGZEawTI0kCkYOvfp973XVV9mjpHfc7eAgYEKXL4cNWuWrW+688fv3x6+vOnv3z89tPTP3/6y6fPn7//6cenf/zxX3/4+GX+7Jv/9/HHb5/++6dvv/n85eOPf/n09L9//PRvf/vhp1//7dOPX775Gf9n/Oa//vLjt5/1y3/5+dPHz7/8/Os3Mfz6+gv79en/fv/ph/nX/G3+p2/xm/hv//Onn7989/G7T9+k+Yf//p/+8Zvvf/z2039c4H/96denf/r4688//fDD52++/PWnXz7Pf8/n9Z+++e7nn/79y1/xp/7zf4pjhOcQ5/+e8NPPT//tP/728UeKUz78n08///rhr99/99cPfyp/91//y1P88Pe/fPny/Y/ffcA/+vNTeclP/cUSfojzhzCewku0p/EynqK1lzL/hD3FMOKoL+EpvowFtKNAskDNbf6QGoCTAIzNfwCAFcScROxtIdNRpAHZ5w9lzB9qenoOLyET2kit+EP4D6PmIGpf1HyNmj/8A4HpufzdzVWt84cGYrMpZGgAJgHHU35pkcCWCWxlActRYISIDdSa9RknMPcJHHOJM9lhdK7yBO51rUeAXFMIl0FNBcAEYKwEQsIqYNGS1r132hFggYRl7ZtJmYvJjYMvmcL8/fzSuVd7LALaAvZX4Othv2fnEIUd20AOgNZBKSczct9QxhoakWlvm3EUiTXF4nb8JPRJ7BRzft2YbIpZXyKZxYzMUJ0ZwxlmjNqpbe59QPOGprm76hQN0NQg6PzttKDxGLS+EAVoGvNnWNrGpcVfN5mNf2QijXLOnbyRdhSZJihFrSt/NpltKjts1JQnbiIL1V3tZKZIZnyjYB9jYu2G69aGzRReRgUzk9nm8lcyQwHzGedoQQ8LWiXJXGDslw4lO/qEpkpohx7GruotFUFrXtB0Dfr7p3MisC1N26jhdOAzjrlbhfOj2Ut1GUdfuAP6tXLVtKhc3gLemLw8d9CUCNqOp6YnKp/nOK+3BSzHrpGJwWmHtgvYm/NnERpwQCEBCmUQoAK7lSRo3l+yHpFyLHWA1Z2bZuoXXM11LiUvx0zl01NyGdNe1HYEh13Rqdch3zDwCj5iI8/WFdJtLOBYwH5Uvlrnfhk4J3PpsJSDN3HCHk4vnfIFx8WNG0dxGYeiUon2xaPCgVqDouN6FvHCWs9LzfrKSx/+16ePP3/48vHn7z59+fAne05XsE0mDU5FSdq1uJmg4Cux9mQ4peDW6IdjbZsYH5ezcWN0ALPh3sS+6bRFJGefcoZ2sbBQ9gtoJwRNk5uhYsPQUTDcmJ1KoFPO0S/2a1gmiN0wXx/ABmLxs3lMDOJ1bqjJxT+jStz6VtfZDSv2Tm4GF7s3ZX1hc1Ohkot/h5ReiiauHxe7Ycq+913z/HADF1cBEHYINs40JnFeYOKleUIkaPObZAPzUWDDymZeGBkSwtDEdp1A/HbkFy2x8rqMZfHKER5PPMyChA1k+HKR5mwjr2HjckVrFi/VxatHeDgJDV/QqLvL5NELKvOvyoELGnRLBudt+doRHgQwXsjYOwk7hNYzDOcMCzbRep68kWTybPn60fVME1dgjM+tMXFQtp20VzUw/OuVfRzHiWMBqMGSmtonwYo1KL7G+yRPHQ41wF06SnyLva5l3xMyYdWWkNOuM3w+WlvAcclpuWIHAdds4eLRMxGGjKr8UsCjG4RPaDqDslq7PuGIC3dO1xgWsMJcpV8FFH12UHFQhnyC4D6Bbq50Q7Pes6bBaEdmHEbTBYbvNnFd23ji2pBrl2zh7AiOBw0b1cCLOvZzJ2GjJv4ucDGELC+rLlo6dj1y4xcchATb0XR9FNJcdNCCPPMSFy4fE85wKRV8oYSTz2ui0WrMiYuJQx+DbuO4bqd0UIlyMedaBr8uTJdUnowMF4enc+JKi5dxgHRDh95t5CQQC0TNFOilywIBlYsKaMt2GdRJNxTpVah9+IeffvgW0M9fPn389ldadAnSFZg7mdrspUHF8VzM0+mmFaTFt7SLc9EPC1ulOmHMVXg2/GYQNoqKJYf3HKPxi87vvaDjjLBNmqfg4kiUC5pOhnouBMH0iPPf0PkrG859wHy9wu3S2JOLz9ixyBn+ZU/k4hZrXOSWtMhpLXKMZ7hVJ7EgKOFbqmAn42e8/w0fe3JHb/xVXpvqAVV7hVvWgaWuxVZybiMXyha+ZbRkWvUiefMjZuwteRFwbQhlTUNrbito3VA3N2OdrYYobl1cO8u1IgWVqZZe4CTFQiyumgKFYa2blnksbLobmz7888fvP1+eIRg7Cc47bUucodyXzpfSRFQkJvOtPcqi5hNU6MSCzTtwARScoQxfLBmx8FEQIpnufB/C7m9bTmCpnRgY6VrnKEOzklpkQ0zqYKgLymVR60kqg0ARULjXkX4RobQGAc1Gwwi30IK2s1B6RfjFhlboxk47pgFaQyfUFrOfYAbt24bIgTv2cjwB9e8I6Aha3rSXdxymFsXwk67WCispyu9EYG9Sl1EWi1FbpZccHfuAPv4tFlcOnZYGYVtSqK3zA+fBFcZix5JLeyvtA+r4t1imSBDBHFXKgXHpIa04eEng4JRePZKydtMDyvi31LJCNoxnFGSnDCGweVxLkJaY0BqZREkr3lYe0cTXRaXL0uhsI0psiBNBI5YgqwIftpZQhG0Le0ZWWk8my5DGBPxbeNuJWBzYTmnryF9h01ksBDUFNYM0IuzF6aBBIyIsH+tYJ3av8R3m8LXtW3HL8VqrCC0GqCFp4BJlDk+B43S5dWo8vVHuMoevfcyK81GR9mPmBF61tvE8mdthm7xtUyxePcwTqSjxx/2LGGoxeY8wWpoNXeJ1f8R24iMCxlC/dQWpA+9wKIJiCkVxUdO6w21R+0kqtVAe2kQBp6Vxmxbjjq1c2+pr6wGwck7xVt9GJsM/eAJpLmtJ1Am412PrLckM" &
+					"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" &
+					"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" &
+					"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" &
+					"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" &
+					"vGHMZaU/jA85ZbSLLI7lG/r17g9JlVayntPDiZyoiMlcTeG/iTTPrORFTH8AcfiX1LpGRIk57o5Caohh1PxEywd16ybyAZHetoyokeXcxOQv65RW/HUk933zQd26kZy45eaPP9oMZOQ8ETiD83h4jZFtKevdkZtrRShLF8Q9658Te1HgCWHhLLHba5I9Axn3Hmp3k6+4Z7a/bFl2kMHnRdFaRF/28AfMSluDL8Je5v4HkJPKx8Z+1ARgnCZTzQTARcOcxhZ5nAFHDTxNGqOiIJJm3wPcGNVBKq20sZ7DW+DrivfOCelRl5lMQD06kjSuGO5gTeuNs8nNPs67LW48wTVd21lzRxWWpKWbMA/SvIM0lq4hs8Hr2i3fUMIPiMuTxGly5pN2K1edc+WyP1NVeor1YiC8lTPZNHmbyetO/KkjTsDH/Ra7x0ExSG/6MLVfzCWzciadpoVO/ghqVn7dspstcXCOA19zgMD+umNf3PRHcK2vnZWiHvQGt/Xiz6BOcNNRKhuc/zAwG0OKf2Gb/4aw6n1Kz1072j23ckNF38lNe6FNJZHidnE1wpDi5tEvZsZbeURNX9/Ry2RLakvJY3Gj16BWgZuDF7f9EeJySLYaLONaZ+PQKVOZQS/Z3nL7H8Fl1cZ+XwEtfwb7e71tCXGFzZt7h018LUGcPWRmcnGCArBzYZOhmLkox0hB+0WCuNzQzL9haPB9dh/KlCrlQ1pPlCP0izderZxTvEVfK2vUHMsnir/gkxB2ZD0BFWD2iYy2FOApzZt1t/nrgJ5IrIxrI8vNiwZtwJOb7GLWpdVzijfpHbKsIB1DkQxvRHILh+Im6t0yxLWFPStudbc3eWy76mn4ZE25oSwtlKrHoxc3Hdmmr3IWNRn7d4UFkbB50nJPey0+kXkvcD5FTCp559RURm0SBrxwsmCj4mmu8fbKlsO8bQoHjUyt9NsSbpghT3nyeo2XO7feFWS4dpMsoI8M9DsbQfuEqGT3GZCTuPZOXcR2hBgX0YeyukODaFFCLIruBXndeXHx+jleX8BMN3F+O4xbSVFDrWIZIZaLd0esHtSmtmI2fFSPlROM5qJLDd3henfFSMz6yojb/H9le7KGAcgAAA==", BinaryEncoding.Base64), Compression.GZip), [Delimiter=",", Columns=15, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Promoted, {{"Decade", type text}, {"Recession", type text}, {"Inflation_band", type text}, {"Fed_stance", type text}, {"Unemployment_rate", type number}, {"Fed_funds_rate", type number}, {"Treasury_10y", type number}, {"Treasury_2y", type number}, {"Yield_spread_10y_2y", type number}, {"Mortgage_30y", type number}, {"CPI_index", type number}, {"Inflation_yoy", type number}, {"Payrolls_thousands", type number}, {"Payroll_growth_yoy", type number}}, "en-US"),
+				Dates0 = Table.TransformColumns(Typed, {{"Date", each if _ = null or _ = "" then null else Date.FromText(Text.From(_), [Culture="en-US", Format="yyyy-MM-dd"]), type date}}),
+				AddMonth = Table.AddColumn(Dates0, "Month", each Date.StartOfMonth(DateTime.Date(Record.Field(_, "Date"))), type date),
+				AddYear = Table.AddColumn(AddMonth, "Year", each Date.Year(Record.Field(_, "Month")), Int64.Type)
+			in
+				AddYear

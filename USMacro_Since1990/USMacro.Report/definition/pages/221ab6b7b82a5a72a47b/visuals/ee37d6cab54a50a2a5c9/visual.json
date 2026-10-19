@@ -1,0 +1,471 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 60.0,
+    "z": 10,
+    "height": 1002.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "441 months of the US economy, January 1990 to September 2026: unemployment, inflation, payrolls, the Fed funds rate, the 2-year and 10-year Treasury yields, the 30-year mortgage rate and NBER recession months. Latest values and changes against a year earlier are measures that follow the date range in the Filters pane.",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Federal Reserve Bank of St. Louis, FRED (UNRATE, FEDFUNDS, GS10, GS2, CPIAUCSL, PAYEMS, USREC; MORTGAGE30US from Freddie Mac, weekly, averaged by month), retrieved on 19 October 2026 from https://fred.stlouisfed.org. FRED data may be copyrighted by the original sources; see https://fred.stlouisfed.org/legal. Prepared: inflation is the 12-month change of CPIAUCSL and payroll growth the 12-month change of PAYEMS, both computed on the full series before cutting at 1990; the spread is the 10-year minus the 2-year yield; the bands and the Fed stance (12-month change of the Fed funds rate, at least 0.25 points) were added.",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Months = COUNTROWS(USMacro)",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Unemployment (latest) = CALCULATE(AVERAGE(USMacro[Unemployment_rate]), USMacro[Date] = MAX(USMacro[Date]))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fed funds (latest) = CALCULATE(AVERAGE(USMacro[Fed_funds_rate]), USMacro[Date] = MAX(USMacro[Date]))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "10-year yield (latest) = CALCULATE(AVERAGE(USMacro[Treasury_10y]), USMacro[Date] = MAX(USMacro[Date]))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Inflation (latest, YoY) = CALCULATE(AVERAGE(USMacro[Inflation_yoy]), USMacro[Date] = MAX(USMacro[Date]))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Mortgage 30y (latest) = CALCULATE(AVERAGE(USMacro[Mortgage_30y]), USMacro[Date] = MAX(USMacro[Date]))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Payroll growth (latest, YoY) = CALCULATE(AVERAGE(USMacro[Payroll_growth_yoy]), USMacro[Date] = MAX(USMacro[Date]))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Unemployment, change vs a year earlier = CALCULATE(AVERAGE(USMacro[Unemployment_rate]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Unemployment_rate]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fed funds, change vs a year earlier = CALCULATE(AVERAGE(USMacro[Fed_funds_rate]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Fed_funds_rate]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "10-year yield, change vs a year earlier = CALCULATE(AVERAGE(USMacro[Treasury_10y]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Treasury_10y]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Inflation, change vs a year earlier = CALCULATE(AVERAGE(USMacro[Inflation_yoy]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Inflation_yoy]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Mortgage, change vs a year earlier = CALCULATE(AVERAGE(USMacro[Mortgage_30y]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Mortgage_30y]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Payroll growth, change vs a year earlier = CALCULATE(AVERAGE(USMacro[Payroll_growth_yoy]), USMacro[Date] = MAX(USMacro[Date])) - CALCULATE(AVERAGE(USMacro[Payroll_growth_yoy]), USMacro[Date] = EDATE(MAX(USMacro[Date]), -12))",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average unemployment = AVERAGE(USMacro[Unemployment_rate])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average inflation (YoY) = AVERAGE(USMacro[Inflation_yoy])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average Fed funds rate = AVERAGE(USMacro[Fed_funds_rate])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average 10-year yield = AVERAGE(USMacro[Treasury_10y])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average 2-year yield = AVERAGE(USMacro[Treasury_2y])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average mortgage rate = AVERAGE(USMacro[Mortgage_30y])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average 10y-2y spread = AVERAGE(USMacro[Yield_spread_10y_2y])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average payroll growth (YoY) = AVERAGE(USMacro[Payroll_growth_yoy])",
+                    "textStyle": {
+                      "fontFamily": "Consolas",
+                      "fontSize": "13pt",
+                      "color": "#FFB000"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B0B0B'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4A3A00'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

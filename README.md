@@ -1,6 +1,6 @@
 # 📊 Power BI Portfolio
 
-A collection of nineteen Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
+A collection of twenty Power BI projects built on public and open datasets: cost of living, military spending, e-commerce, video games, pop culture, food prices, how people spend their time, social media activity and Formula 1 (a Microsoft Fabric lakehouse project). Most folders are self-contained mini-projects with a `.pbix` report and the raw data behind it; the exceptions are noted below (`F1_Fabric` has a notebook and a PDF instead of a `.pbix`, `HarryPotterMoviesAll` has only the data, `OlistEcommerce_BrazilianMarketplace` has only the report).
 
 ## 📌 What's Inside
 
@@ -22,6 +22,7 @@ A collection of nineteen Power BI projects built on public and open datasets: co
 - **StudentPerformance_FinalGrades/** — Power BI project (`StudentPerformance.pbip`, six pages, dark green board with chalk yellow and pink and numbered page chips) on 1,044 course enrolments of Portuguese secondary-school students: a commentary card with one big number beside the charts on each page. Data is stored in the model; see the folder's [README](StudentPerformance_FinalGrades/README.md) (UCI, CC BY 4.0).
 - **TimeSpendByAge/** — `spendtime.pbix` report on how different age groups spend their time, based on `time-spent-with-relationships-by-age-us.csv`.
 - **tweets_trends/** — `tweet_trends.pbix` dashboard analyzing tweet trends, built from a large raw tweets CSV export.
+- **USMacro_Since1990/** — Power BI project (`USMacro.pbip`, six pages, amber monospace on black with function-key tabs, like a market terminal) on 441 months of the US economy, 1990-2026 (FRED): latest values and their change against a year earlier, rates and the yield curve, inflation and jobs, and recessions. Data is stored in the model; see the folder's [README](USMacro_Since1990/README.md) (FRED, see the note on terms).
 - **WineQuality_VinhoVerde/** — Power BI project (`WineQuality.pbip`, six pages, warm white with a burgundy menu on the right) on 6,497 Portuguese red and white Vinho Verde wines with eleven laboratory measurements and a taster's quality score: a gauge, a multi-row card, small multiples of the ingredients by quality, and red against white. Data is stored in the model; see the folder's [README](WineQuality_VinhoVerde/README.md) (UCI, CC BY 4.0).
 
 ## 🚀 Getting Started

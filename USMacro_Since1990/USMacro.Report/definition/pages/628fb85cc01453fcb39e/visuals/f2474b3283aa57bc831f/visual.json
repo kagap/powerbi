@@ -1,0 +1,528 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "f2474b3283aa57bc831f",
+  "position": {
+    "x": 24.0,
+    "y": 60.0,
+    "z": 10,
+    "height": 1002.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "USMacro.Date",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Decade"
+                }
+              },
+              "queryRef": "USMacro.Decade",
+              "nativeQueryRef": "Decade"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Recession"
+                }
+              },
+              "queryRef": "USMacro.Recession",
+              "nativeQueryRef": "Recession"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Inflation_band"
+                }
+              },
+              "queryRef": "USMacro.Inflation_band",
+              "nativeQueryRef": "Inflation_band"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Fed_stance"
+                }
+              },
+              "queryRef": "USMacro.Fed_stance",
+              "nativeQueryRef": "Fed_stance"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Unemployment_rate"
+                }
+              },
+              "queryRef": "USMacro.Unemployment_rate",
+              "nativeQueryRef": "Unemployment_rate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Fed_funds_rate"
+                }
+              },
+              "queryRef": "USMacro.Fed_funds_rate",
+              "nativeQueryRef": "Fed_funds_rate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Treasury_10y"
+                }
+              },
+              "queryRef": "USMacro.Treasury_10y",
+              "nativeQueryRef": "Treasury_10y"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Treasury_2y"
+                }
+              },
+              "queryRef": "USMacro.Treasury_2y",
+              "nativeQueryRef": "Treasury_2y"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Yield_spread_10y_2y"
+                }
+              },
+              "queryRef": "USMacro.Yield_spread_10y_2y",
+              "nativeQueryRef": "Yield_spread_10y_2y"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Mortgage_30y"
+                }
+              },
+              "queryRef": "USMacro.Mortgage_30y",
+              "nativeQueryRef": "Mortgage_30y"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "CPI_index"
+                }
+              },
+              "queryRef": "USMacro.CPI_index",
+              "nativeQueryRef": "CPI_index"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Inflation_yoy"
+                }
+              },
+              "queryRef": "USMacro.Inflation_yoy",
+              "nativeQueryRef": "Inflation_yoy"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Payrolls_thousands"
+                }
+              },
+              "queryRef": "USMacro.Payrolls_thousands",
+              "nativeQueryRef": "Payrolls_thousands"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "USMacro"
+                    }
+                  },
+                  "Property": "Months"
+                }
+              },
+              "queryRef": "USMacro.Months",
+              "nativeQueryRef": "Months"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFB000'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFB000'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B0B0B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFB000'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B0B0B'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFB000'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B0B0B'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFB000'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4A3A00'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4A3A00'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B0B0B'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4A3A00'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rows'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFB000'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

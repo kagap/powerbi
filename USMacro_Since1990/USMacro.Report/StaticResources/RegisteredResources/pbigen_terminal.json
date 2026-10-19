@@ -1,0 +1,70 @@
+{
+  "name": "pbigen terminal",
+  "dataColors": [
+    "#FFB000",
+    "#00D26A",
+    "#FF4D4D",
+    "#4DA3FF",
+    "#E0E0E0",
+    "#B07A00",
+    "#C792EA",
+    "#00BFA5"
+  ],
+  "background": "#0B0B0B",
+  "foreground": "#FFB000",
+  "tableAccent": "#FFB000",
+  "good": "#FFB000",
+  "neutral": "#B07A00",
+  "bad": "#00D26A",
+  "maximum": "#FFB000",
+  "center": "#B07A00",
+  "minimum": "#00D26A",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Consolas",
+      "color": "#FFB000"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Consolas",
+      "color": "#FFB000"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Consolas",
+      "color": "#FFB000"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Consolas",
+      "color": "#B07A00"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
