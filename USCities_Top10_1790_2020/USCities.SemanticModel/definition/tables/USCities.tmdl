@@ -1,0 +1,162 @@
+table USCities
+	lineageTag: 92e6fed8-c16b-5c05-aefb-f991128b568b
+
+	measure Entries = COUNTROWS(USCities)
+		formatString: #,0
+		lineageTag: e9232d93-9cc7-51eb-b450-4d1d0ffa15e7
+
+	measure 'Rank (1 is the largest)' = -MIN(USCities[Rank])
+		formatString: #,0;#,0
+		lineageTag: 531d13ed-2081-54d3-b9df-d04ea8552493
+
+	measure Residents = SUM(USCities[Population])
+		formatString: #,0
+		lineageTag: 1ed39b07-a54f-54d2-8ac6-6ce50763567d
+
+	measure 'Average rank' = AVERAGE(USCities[Rank])
+		formatString: 0.0
+		lineageTag: 5de7d151-53f8-5f38-89d0-f31048c0e19c
+
+	measure 'Best rank' = MIN(USCities[Rank])
+		formatString: 0
+		lineageTag: f980530c-f250-5d14-af67-976f4aa3e072
+
+	measure 'Censuses in the top 10' = DISTINCTCOUNT(USCities[Census_year])
+		formatString: 0
+		lineageTag: 37c69ef6-0858-5d28-90a2-385b19792520
+
+	measure 'Rank change vs previous census' = SUM(USCities[Rank_change])
+		formatString: +0;-0;0
+		lineageTag: a28678e9-53a1-5657-9089-0d9357ad7e10
+
+	measure 'Growth vs previous census (%)' = AVERAGE(USCities[Population_growth_pct])
+		formatString: 0.0
+		lineageTag: 26895419-49da-50f8-b3e9-f4fb61b5383c
+
+	measure Cities = DISTINCTCOUNT(USCities[City])
+		formatString: 0
+		lineageTag: 8e361c20-2d4a-5521-912a-1f99dc6b8ab3
+
+	measure 'Rank score (11 minus rank)' = 11 - MIN(USCities[Rank])
+		formatString: 0
+		lineageTag: 60a85d49-48f9-559c-b565-ab104bce8ed1
+
+	measure 'Largest city (people)' = MAX(USCities[Population])
+		formatString: #,0
+		lineageTag: 975ba015-aecf-5afa-8919-3fb33dd30a06
+
+	measure 'Rank in the census' = MIN(USCities[Rank])
+		formatString: 0
+		lineageTag: 0e282917-5430-5c0c-9340-32a44b33a302
+
+	column Census_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 627c8bba-fd7b-5241-915f-e56e4e66ff88
+		summarizeBy: none
+		sourceColumn: "Census_year"
+
+	column Rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 4fb12203-514b-5062-a580-4200a0c01561
+		summarizeBy: none
+		sourceColumn: "Rank"
+
+	column City
+		dataType: string
+		lineageTag: 9647b525-9884-5443-815c-3c23a4c9e20e
+		summarizeBy: none
+		sourceColumn: "City"
+
+	column State
+		dataType: string
+		lineageTag: b3fb6de6-88bb-5fe2-a285-1056328088d8
+		summarizeBy: none
+		sourceColumn: "State"
+
+	column Population
+		dataType: int64
+		formatString: 0
+		lineageTag: 179bc432-3d91-5664-b809-aa2230048b51
+		summarizeBy: none
+		sourceColumn: "Population"
+
+	column Region
+		dataType: string
+		lineageTag: c25e00a8-0684-511e-88a3-62adc9f98a1a
+		summarizeBy: none
+		sourceColumn: "Region"
+
+	column Previous_rank
+		dataType: double
+		formatString: #,0.00
+		lineageTag: a14f97fa-505e-5706-9c51-98f97a925159
+		summarizeBy: none
+		sourceColumn: "Previous_rank"
+
+	column Rank_change
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 0df2c4a3-68be-5dea-93e7-8bc46543f37d
+		summarizeBy: none
+		sourceColumn: "Rank_change"
+
+	column Population_growth_pct
+		dataType: double
+		formatString: #,0.00
+		lineageTag: fe3d37eb-42ba-5099-953b-903986ed2b9e
+		summarizeBy: none
+		sourceColumn: "Population_growth_pct"
+
+	column Entry
+		dataType: string
+		lineageTag: ba5d119b-5640-5aad-96b5-4cdb401d1724
+		summarizeBy: none
+		sourceColumn: "Entry"
+
+	column Appearances
+		dataType: int64
+		formatString: 0
+		lineageTag: 31161752-514a-5a6d-baaa-2a768e579765
+		summarizeBy: none
+		sourceColumn: "Appearances"
+
+	column Best_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: e698aedf-11dc-5d32-a3ed-b2e94a49439d
+		summarizeBy: none
+		sourceColumn: "Best_rank"
+
+	column Rank_label
+		dataType: int64
+		formatString: 0
+		lineageTag: 87c5e38f-4bd2-5c5c-b780-ee9baeb4c0b0
+		summarizeBy: none
+		sourceColumn: "Rank_label"
+
+	column Decade
+		dataType: int64
+		formatString: 0
+		lineageTag: 92c73ba3-4b63-531e-9c7f-79606f46a59e
+		summarizeBy: none
+		sourceColumn: "Decade"
+
+	column Group
+		dataType: string
+		lineageTag: cb94338f-0d74-551b-95dc-670955a4170b
+		summarizeBy: none
+		sourceColumn: "Group"
+
+	partition USCities = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(Binary.Decompress(Binary.FromText("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" &
+					"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" &
+					"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", BinaryEncoding.Base64), Compression.GZip), [Delimiter=",", Columns=15, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Promoted, {{"Census_year", Int64.Type}, {"Rank", Int64.Type}, {"City", type text}, {"State", type text}, {"Population", Int64.Type}, {"Region", type text}, {"Previous_rank", type number}, {"Rank_change", type number}, {"Population_growth_pct", type number}, {"Entry", type text}, {"Appearances", Int64.Type}, {"Best_rank", Int64.Type}, {"Rank_label", Int64.Type}, {"Decade", Int64.Type}, {"Group", type text}}, "en-US")
+			in
+				Typed

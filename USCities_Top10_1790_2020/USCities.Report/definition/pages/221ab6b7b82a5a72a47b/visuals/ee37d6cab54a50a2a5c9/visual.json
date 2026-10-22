@@ -1,0 +1,363 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 183.0,
+    "z": 10,
+    "height": 879.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "The ten most populous places in the United States at each census from 1790 to 2020: 24 censuses, 241 entries (the tenth place was shared in 1790) and 32 different places. Population is the census count of the place as it was then, so Brooklyn, Northern Liberties, Southwark and Spring Garden appear on their own before they were merged into larger cities. Rank change and growth compare a city with its own result ten years earlier and are empty when it was not in the top 10 then.",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Wikipedia, List of most populous cities in the United States by decade (https://en.wikipedia.org/wiki/List_of_most_populous_cities_in_the_United_States_by_decade), text licensed CC BY-SA 4.0, compiled from US Census Bureau counts; retrieved on 22 October 2026. Prepared: footnote marks and notes were removed, the population counts were read as numbers, regions follow the Census Bureau, and previous rank, rank change, growth and a group (a regular is in the top 10 for six censuses or more) were added.",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Entries = COUNTROWS(USCities)",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Rank (1 is the largest) = -MIN(USCities[Rank])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Residents = SUM(USCities[Population])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average rank = AVERAGE(USCities[Rank])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Best rank = MIN(USCities[Rank])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Censuses in the top 10 = DISTINCTCOUNT(USCities[Census_year])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Rank change vs previous census = SUM(USCities[Rank_change])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Growth vs previous census (%) = AVERAGE(USCities[Population_growth_pct])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cities = DISTINCTCOUNT(USCities[City])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Rank score (11 minus rank) = 11 - MIN(USCities[Rank])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Largest city (people) = MAX(USCities[Population])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Rank in the census = MIN(USCities[Rank])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#111111"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F8F5EC'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#111111'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

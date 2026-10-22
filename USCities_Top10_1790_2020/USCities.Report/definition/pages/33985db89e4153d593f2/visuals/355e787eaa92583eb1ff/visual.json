@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "355e787eaa92583eb1ff",
+  "position": {
+    "x": 24.0,
+    "y": 21.0,
+    "z": 2,
+    "height": 87.0,
+    "width": 1872.0,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "America's biggest cities, 1790 to 2020",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "28pt",
+                      "fontWeight": "bold",
+                      "color": "#111111"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
