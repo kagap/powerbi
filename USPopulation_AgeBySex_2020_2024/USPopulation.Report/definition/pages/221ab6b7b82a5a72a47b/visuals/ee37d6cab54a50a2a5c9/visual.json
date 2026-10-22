@@ -1,0 +1,345 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 267.0,
+    "y": 99.0,
+    "z": 20,
+    "height": 963.0,
+    "width": 1629.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "The civilian resident population of the 50 states and the District of Columbia on 1 July of 2020 to 2024, by single year of age (0 to 85 and over) and sex: 43,860 rows. Every measure counts one year at a time: the latest year in the current selection, which is 2024 unless the Filters pane or a visual says otherwise. Generations are assigned from the year of birth (the year minus the age), so a person in the age 85 group counts as 85.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "US Census Bureau, Population Estimates Program, State Population by Characteristics: 2020-2024 (file sc-est2024-agesex-civ.csv, vintage 2024, civilian population), public domain, retrieved on 22 October 2026 from https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-detail.html. Prepared: the wide table (one column a year) was turned into rows, the national and sex-total rows were left out, state names got postal codes and positions on a tile grid, and age groups, life stages and generations were added. Average age treats everyone aged 85 and over as 85, so it is slightly low.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Records = COUNTROWS(USPopulation)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Residents = CALCULATE(SUM(USPopulation[Population]), USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Women = CALCULATE(SUM(USPopulation[Population]), USPopulation[Sex] = \"Female\", USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Men = CALCULATE(SUM(USPopulation[Population]), USPopulation[Sex] = \"Male\", USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Men (mirrored) = -CALCULATE(SUM(USPopulation[Population]), USPopulation[Sex] = \"Male\", USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average age = DIVIDE(CALCULATE(SUMX(USPopulation, USPopulation[Age] * USPopulation[Population]), USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])), CALCULATE(SUM(USPopulation[Population]), USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share 65 and over = DIVIDE(CALCULATE(SUM(USPopulation[Population]), USPopulation[Age] >= 65, USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])), CALCULATE(SUM(USPopulation[Population]), USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share under 15 = DIVIDE(CALCULATE(SUM(USPopulation[Population]), USPopulation[Age] < 15, USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])), CALCULATE(SUM(USPopulation[Population]), USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Women per 100 men = DIVIDE(CALCULATE(SUM(USPopulation[Population]), USPopulation[Sex] = \"Female\", USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])), CALCULATE(SUM(USPopulation[Population]), USPopulation[Sex] = \"Male\", USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year]))) * 100",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Dependants per 100 of working age = DIVIDE(CALCULATE(SUM(USPopulation[Population]), USPopulation[Age] < 15, USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])) + CALCULATE(SUM(USPopulation[Population]), USPopulation[Age] >= 65, USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year])), CALCULATE(SUM(USPopulation[Population]), USPopulation[Age] >= 15, USPopulation[Age] < 65, USPopulation[Estimate_year] = MAX(USPopulation[Estimate_year]))) * 100",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "State tile = SELECTEDVALUE(USPopulation[State_code])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Change 2020 to 2024 = CALCULATE(SUM(USPopulation[Population]), USPopulation[Estimate_year] = 2024) - CALCULATE(SUM(USPopulation[Population]), USPopulation[Estimate_year] = 2020)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#3D2C4F"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F3DCE8'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "22D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
