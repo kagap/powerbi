@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "9ec07f523ba357729c4a",
+  "position": {
+    "x": 24.0,
+    "y": 12.0,
+    "z": 2,
+    "height": 69.0,
+    "width": 1872.0,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Central Park since 1869: how New York's weather has changed",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#17394A",
+                      "fontFamily": "Segoe UI Light"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

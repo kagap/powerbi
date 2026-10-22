@@ -1,0 +1,356 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 147.0,
+    "z": 10,
+    "height": 915.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "57,343 days of weather in New York's Central Park, from 1 January 1869 to 31 December 2025 (157 complete years): the daily high and low temperature, precipitation and snowfall. The anomaly is the difference between the average temperature and the average of the same months in 1869-1900 (the first period). The warming stripes colour each year by the band of its own anomaly (the Year_band column, seven bands from below -1.0 to above +2.0 degrees). The station, its instruments and the city around it changed over 150 years, so the record mixes the climate with the growth of the city.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "NOAA National Centers for Environmental Information, Global Historical Climatology Network daily (GHCN-Daily), station USW00094728 (New York City Central Park), public domain, retrieved on 22 October 2026 from https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_station/. Prepared: values flagged by the quality checks (191 readings) were dropped, tenths of a degree were converted to Celsius, the daily average is the mean of the high and the low, 2026 was left out so that every year is complete, and 41 days without temperature and 177 without snow readings stay empty.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Days = COUNTROWS(NYCWeather)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average temperature (C) = AVERAGE(NYCWeather[TAVG_C])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Anomaly vs 1869-1900 (C) = AVERAGE(NYCWeather[TAVG_C]) - CALCULATE(AVERAGE(NYCWeather[TAVG_C]), REMOVEFILTERS(NYCWeather[Year]), REMOVEFILTERS(NYCWeather[Decade]), REMOVEFILTERS(NYCWeather[Period]), NYCWeather[Period] = \"1 1869-1900\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average daily high (C) = AVERAGE(NYCWeather[TMAX_C])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average daily low (C) = AVERAGE(NYCWeather[TMIN_C])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Precipitation (mm) = SUM(NYCWeather[PRCP_mm])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Snowfall (cm) = SUM(NYCWeather[SNOW_mm]) / 10",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Days with a high of 32 C or more = CALCULATE(COUNTROWS(NYCWeather), NYCWeather[TMAX_C] >= 32)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Days that never thawed = CALCULATE(COUNTROWS(NYCWeather), NYCWeather[TMAX_C] < 0)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Record high (C) = MAX(NYCWeather[TMAX_C])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Record low (C) = MIN(NYCWeather[TMIN_C])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Stripe = 1",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Wet days (1 mm or more) = CALCULATE(COUNTROWS(NYCWeather), NYCWeather[PRCP_mm] >= 1)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#17394A"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DCE7EE'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
