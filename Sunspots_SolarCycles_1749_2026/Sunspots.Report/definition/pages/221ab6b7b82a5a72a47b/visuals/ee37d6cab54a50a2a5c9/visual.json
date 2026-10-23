@@ -1,0 +1,312 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 156.0,
+    "z": 10,
+    "height": 906.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "3,333 months of the international sunspot number, from January 1749 to September 2026. The sunspot number counts spots and groups of spots on the visible face of the Sun. The 13-month smoothed number is calculated here with the usual weights (half weight on the two end months), so it is empty for the first and last six months. Cycle boundaries (Cycle_year counts the years since each minimum) are found from the data: the month with the lowest smoothed number around each of the 25 known solar minima. Cycle 25 is still running, so its peak is the peak so far and it has no length yet. Before 1849 the observations are sparse and the numbers less certain; the last months are provisional.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "SILSO World Data Center, Royal Observatory of Belgium: monthly mean total sunspot number, version 2.0 (https://www.sidc.be/SILSO/INFO/snmtotcsv.php), licence CC BY-NC (SILSO data policy), retrieved on 23 October 2026. Prepared: missing standard deviations and observation counts (the early years) were left empty, and the smoothed number, the solar cycle, the cycle year, the cycle length and peak, decades, activity bands (quiet is under 20) and a data-quality flag were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Months = COUNTROWS(Sunspots)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average sunspot number = AVERAGE(Sunspots[Sunspot_number])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Smoothed number (13 months) = AVERAGE(Sunspots[Smoothed])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Highest month = MAX(Sunspots[Sunspot_number])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Peak of the smoothed number = MAX(Sunspots[Smoothed])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cycles = CALCULATE(DISTINCTCOUNT(Sunspots[Cycle]), Sunspots[Cycle] <> \"Before cycle 1\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cycle length (years) = MAX(Sunspots[Cycle_length_months]) / 12",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of quiet months = DIVIDE(CALCULATE(COUNTROWS(Sunspots), Sunspots[Activity] = \"1 Quiet (under 20)\"), COUNTROWS(Sunspots))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Quiet months = CALCULATE(COUNTROWS(Sunspots), Sunspots[Activity] = \"1 Quiet (under 20)\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#FFF3E0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#15143A'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2A2860'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
