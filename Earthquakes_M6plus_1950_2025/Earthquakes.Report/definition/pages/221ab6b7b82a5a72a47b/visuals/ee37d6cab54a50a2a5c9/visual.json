@@ -1,0 +1,345 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 120.0,
+    "y": 96.0,
+    "z": 20,
+    "height": 966.0,
+    "width": 1776.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "10,319 earthquakes of magnitude 6.0 and over between 1950 and 2025 from the USGS catalogue (nuclear and other explosions were left out). The catalogue mixes magnitude types (mostly moment magnitude, but also surface-wave and body-wave magnitudes for the older events), so magnitudes of different decades are not perfectly comparable. Region is read from the place text (the part after the last comma, with regions of the mid-ocean ridges grouped together; the 20 busiest regions are kept and the rest are Other regions), so it is an approximation, not an official boundary. The map does not plot single quakes but counts them in 5-degree cells (569 cells). The data has no casualties or damage.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "US Geological Survey (USGS), ANSS Comprehensive Earthquake Catalog via the FDSN event web service (https://earthquake.usgs.gov/fdsnws/event/1/), USGS information and data are generally in the public domain (see https://www.usgs.gov/legal), retrieved on 23 October 2026. Prepared: the query was run in slices of up to 15 years (the service allows at most 20,000 events a query), events other than earthquakes were dropped, and magnitude bands and steps, depth classes and bands (shallow is under 70 km, deep over 300 km), regions, 5-degree grid cells and decades were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Earthquakes = COUNTROWS(Earthquakes)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average magnitude = AVERAGE(Earthquakes[Magnitude])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Largest magnitude = MAX(Earthquakes[Magnitude])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average depth (km) = AVERAGE(Earthquakes[Depth_km])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Magnitude 7 and over = CALCULATE(COUNTROWS(Earthquakes), Earthquakes[Magnitude] >= 7)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Magnitude 8 and over = CALCULATE(COUNTROWS(Earthquakes), Earthquakes[Magnitude] >= 8)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share deeper than 300 km = DIVIDE(CALCULATE(COUNTROWS(Earthquakes), Earthquakes[Depth_km] >= 300), COUNTROWS(Earthquakes))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share shallower than 70 km = DIVIDE(CALCULATE(COUNTROWS(Earthquakes), Earthquakes[Depth_km] < 70), COUNTROWS(Earthquakes))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cell longitude = AVERAGE(Earthquakes[Cell_lon])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cell latitude = AVERAGE(Earthquakes[Cell_lat])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Regions = DISTINCTCOUNT(Earthquakes[Region])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Log10 of earthquakes = LOG10(COUNTROWS(Earthquakes))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#23272B"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D3D8DB'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
