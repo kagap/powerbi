@@ -1,0 +1,351 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 111.0,
+    "z": 10,
+    "height": 951.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "1,036 entries of the Nobel Prizes from 1901 to 2026: one row for every laureate and prize (1,028 different laureates, 31 of them organizations, and a few people who won twice or three times are counted once for each prize). Age at the award is the award year minus the birth year, so it can be one year too high, and organizations have no age. Country is the current country of birth as named by the Nobel Prize API (the place of founding for an organization). Economics is the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel, first awarded in 1969. The 2026 prizes are included as the API listed them on 23 October 2026.",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "NobelPrize.org API 2.1 (https://api.nobelprize.org/2.1/laureates), free to use under the Creative Commons Zero (CC0) licence according to the API terms, retrieved on 23 October 2026. Prepared: the nested records were flattened to one row for every laureate and prize, and decades, eras, age bands, the number of laureates sharing the prize (Prize_shared), a unique prize key (Prize) and a country group (the 14 countries with the most laureates, the others as Other) were added.",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Laureates = COUNTROWS(NobelLaureates)",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Prizes awarded = DISTINCTCOUNT(NobelLaureates[Prize])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of women = DIVIDE(CALCULATE(COUNTROWS(NobelLaureates), NobelLaureates[Gender] = \"Woman\"), COUNTROWS(NobelLaureates))",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Women = CALCULATE(COUNTROWS(NobelLaureates), NobelLaureates[Gender] = \"Woman\")",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average age = AVERAGE(NobelLaureates[Age_at_award])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median age = MEDIAN(NobelLaureates[Age_at_award])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Countries = CALCULATE(DISTINCTCOUNT(NobelLaureates[Birth_country]), NobelLaureates[Birth_country] <> \"Unknown\")",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Laureates per prize = DIVIDE(COUNTROWS(NobelLaureates), DISTINCTCOUNT(NobelLaureates[Prize]))",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Youngest = MIN(NobelLaureates[Age_at_award])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Oldest = MAX(NobelLaureates[Age_at_award])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Award year = AVERAGE(NobelLaureates[Award_year])",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "13pt",
+                      "color": "#F3EEDF"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#181B24'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2C2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

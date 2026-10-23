@@ -1,0 +1,70 @@
+{
+  "name": "pbigen laurel",
+  "dataColors": [
+    "#C9A24B",
+    "#7FA6C9",
+    "#C97B63",
+    "#8FBF9F",
+    "#B79CD6",
+    "#E3D5A1",
+    "#5E7F9C",
+    "#D9A5A5"
+  ],
+  "background": "#181B24",
+  "foreground": "#F3EEDF",
+  "tableAccent": "#C9A24B",
+  "good": "#C9A24B",
+  "neutral": "#A59F8C",
+  "bad": "#8FB8DE",
+  "maximum": "#C9A24B",
+  "center": "#A59F8C",
+  "minimum": "#8FB8DE",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Georgia",
+      "color": "#C9A24B"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Georgia",
+      "color": "#F3EEDF"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Georgia",
+      "color": "#F3EEDF"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Georgia",
+      "color": "#A59F8C"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#101218"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#08090C"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
