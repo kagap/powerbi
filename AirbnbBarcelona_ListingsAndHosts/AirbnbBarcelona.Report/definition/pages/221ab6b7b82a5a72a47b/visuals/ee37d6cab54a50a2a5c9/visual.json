@@ -1,0 +1,367 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 279.0,
+    "y": 90.0,
+    "z": 20,
+    "height": 972.0,
+    "width": 1617.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "15,236 Airbnb listings in Barcelona as scraped by Inside Airbnb on 17 September 2026. The price is the nightly price as published in the file (shown with a dollar sign; the file gives no currency); 17% of the listings show no price, so price figures use the 12,610 that do. Professional hosts are those with 10 or more listings, and a listing is active when it had at least one review in the last 12 months. The map does not plot single listings but counts them in cells of 0.01 degrees (about one kilometre). Listing data comes from the public pages of the platform and shows what is offered, not what is booked or earned.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Inside Airbnb (https://insideairbnb.com/get-the-data/), Barcelona, listings.csv.gz of 17 September 2026, licensed under Creative Commons Attribution 4.0 (CC BY 4.0), retrieved on 25 October 2026. Prepared: about 30 of the 90 columns were kept, the price was turned into a number, and price, rating, availability, host-size and group-size bands, a licence status (none listed, exempt or a registration number), the property types (the seven most common kept) and a 0.01-degree cell were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Listings = COUNTROWS(AirbnbBarcelona)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average price = AVERAGE(AirbnbBarcelona[Price])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median price = MEDIAN(AirbnbBarcelona[Price])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average rating = AVERAGE(AirbnbBarcelona[Rating])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of superhosts = DIVIDE(CALCULATE(COUNTROWS(AirbnbBarcelona), AirbnbBarcelona[Superhost] = \"Superhost\"), COUNTROWS(AirbnbBarcelona))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of entire homes = DIVIDE(CALCULATE(COUNTROWS(AirbnbBarcelona), AirbnbBarcelona[Room_type] = \"Entire home/apt\"), COUNTROWS(AirbnbBarcelona))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of professional hosts = DIVIDE(CALCULATE(COUNTROWS(AirbnbBarcelona), AirbnbBarcelona[Host_listings] >= 10), COUNTROWS(AirbnbBarcelona))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average availability (days) = AVERAGE(AirbnbBarcelona[Availability_365])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Reviews in the last 12 months = SUM(AirbnbBarcelona[Reviews_last_12_months])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hosts = DISTINCTCOUNT(AirbnbBarcelona[Host_id])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Neighbourhoods = DISTINCTCOUNT(AirbnbBarcelona[Neighbourhood])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cell longitude = AVERAGE(AirbnbBarcelona[Cell_lon])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cell latitude = AVERAGE(AirbnbBarcelona[Cell_lat])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average price per guest = AVERAGE(AirbnbBarcelona[Price_per_guest])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1E1B4B"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E4DEF7'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

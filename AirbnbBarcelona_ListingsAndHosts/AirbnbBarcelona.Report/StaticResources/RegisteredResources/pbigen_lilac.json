@@ -1,0 +1,70 @@
+{
+  "name": "pbigen lilac",
+  "dataColors": [
+    "#7C3AED",
+    "#06B6D4",
+    "#F43F5E",
+    "#F59E0B",
+    "#A78BFA",
+    "#10B981",
+    "#EC4899",
+    "#3B82F6"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1E1B4B",
+  "tableAccent": "#7C3AED",
+  "good": "#7C3AED",
+  "neutral": "#7C779E",
+  "bad": "#F97316",
+  "maximum": "#7C3AED",
+  "center": "#7C779E",
+  "minimum": "#F97316",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1E1B4B"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1E1B4B"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1E1B4B"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#7C779E"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F1EEFB"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#E5E7EB"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

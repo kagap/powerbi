@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f1e748ea38145f66b45e",
+  "displayName": "Prices",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}
