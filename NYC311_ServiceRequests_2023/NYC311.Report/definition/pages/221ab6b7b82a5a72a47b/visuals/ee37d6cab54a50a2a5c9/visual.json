@@ -1,0 +1,323 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 288.0,
+    "y": 78.0,
+    "z": 10,
+    "height": 984.0,
+    "width": 1614.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "A 2% sample of the 3.2 million 311 service requests that New Yorkers made in 2023: 64,518 requests (every request whose id ends in 17 or 63). Multiply the counts by about 50 to estimate the whole year; the shares, medians and rankings do not depend on the sample size much. Closed requests are those with the status Closed; the time to close is the days between the request and the closing date (negative or missing dates are left empty), and the three-day line is only a yardstick chosen here, not an official service target. Other agencies are the agencies with fewer requests than the eight largest; other complaint types are the types outside the twelve most common.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "NYC Open Data, 311 Service Requests from 2020 to Present (https://data.cityofnewyork.us/resource/erm2-nwe9), city of New York; the dataset page lists no separate licence and the data is public, retrieved on 25 October 2026 through the Socrata API. Prepared: a 2% systematic sample by request id, labels in title case, the time to close, a resolution band, the hour and weekday of the request, the top agencies and complaint types kept and the rest grouped.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Requests = COUNTROWS(NYC311)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Closed = CALCULATE(COUNTROWS(NYC311), NYC311[Status] = \"Closed\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Closure rate = DIVIDE(CALCULATE(COUNTROWS(NYC311), NYC311[Status] = \"Closed\"), COUNTROWS(NYC311))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Closed within 3 days = COUNTROWS(FILTER(NYC311, NOT ISBLANK(NYC311[Days_to_close]) && NYC311[Days_to_close] <= 3))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share closed within 3 days = DIVIDE(COUNTROWS(FILTER(NYC311, NOT ISBLANK(NYC311[Days_to_close]) && NYC311[Days_to_close] <= 3)), COUNTROWS(NYC311))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median days to close = MEDIAN(NYC311[Days_to_close])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average days to close = AVERAGE(NYC311[Days_to_close])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Not closed = CALCULATE(COUNTROWS(NYC311), NYC311[Status] <> \"Closed\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Agencies = DISTINCTCOUNT(NYC311[Agency_code])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Complaint types = DISTINCTCOUNT(NYC311[Complaint_type])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#EEF2FF"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#212769'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#343C94'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
