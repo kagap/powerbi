@@ -1,0 +1,367 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 279.0,
+    "y": 90.0,
+    "z": 20,
+    "height": 972.0,
+    "width": 1617.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "The electricity generation mix of Great Britain and its carbon intensity in every half-hour of 2025, as published by the National Grid ESO's Carbon Intensity API: 17,494 of the 17,520 half-hours (the API has gaps) and one row for each fuel, so the same half-hour appears once per fuel. Carbon intensity is the grams of carbon dioxide emitted for each kilowatt-hour generated (the actual value; 18 half-hours have no forecast). Shares are shares of all generation in Great Britain, including imports. Coal and the category other were zero all year and are not shown; hydro appears in the data but is almost always zero, because the API does not report it as a separate fuel. Renewable here means wind, solar and hydro; low-carbon also counts nuclear and biomass.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Carbon Intensity API (National Grid ESO and partners), https://api.carbonintensity.org.uk/, licensed under CC BY 4.0, retrieved on 25 October 2026 (generation mix and actual intensity, 1 January to 31 December 2025, UTC). Prepared: the two feeds were joined by half-hour, the long table has one row per half-hour and fuel, and hour, part of the day, weekday, weekend, month, season, source type and an intensity index were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fuel records = COUNTROWS(UKGrid)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Half-hours = DISTINCTCOUNT(UKGrid[Slot])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average carbon intensity (g per kWh) = AVERAGE(UKGrid[Intensity_actual])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Renewable share = DIVIDE(CALCULATE(SUM(UKGrid[Share_pct]), UKGrid[Source_type] = \"Renewable\"), SUM(UKGrid[Share_pct]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Low-carbon share = DIVIDE(CALCULATE(SUM(UKGrid[Share_pct]), UKGrid[Source_type] = \"Renewable\" || UKGrid[Source_type] = \"Nuclear\" || UKGrid[Source_type] = \"Biomass\"), SUM(UKGrid[Share_pct]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Gas share = DIVIDE(CALCULATE(SUM(UKGrid[Share_pct]), UKGrid[Fuel] = \"Gas\"), SUM(UKGrid[Share_pct]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Wind share = DIVIDE(CALCULATE(SUM(UKGrid[Share_pct]), UKGrid[Fuel] = \"Wind\"), SUM(UKGrid[Share_pct]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Solar share = DIVIDE(CALCULATE(SUM(UKGrid[Share_pct]), UKGrid[Fuel] = \"Solar\"), SUM(UKGrid[Share_pct]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Imports share = DIVIDE(CALCULATE(SUM(UKGrid[Share_pct]), UKGrid[Fuel] = \"Imports\"), SUM(UKGrid[Share_pct]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Nuclear share = DIVIDE(CALCULATE(SUM(UKGrid[Share_pct]), UKGrid[Fuel] = \"Nuclear\"), SUM(UKGrid[Share_pct]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cleanest half-hour (g per kWh) = MIN(UKGrid[Intensity_actual])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Dirtiest half-hour (g per kWh) = MAX(UKGrid[Intensity_actual])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average share of generation = SUM(UKGrid[Share_pct]) / (DISTINCTCOUNT(UKGrid[Slot]) * 100)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Clean half-hours = DIVIDE(CALCULATE(DISTINCTCOUNT(UKGrid[Slot]), UKGrid[Intensity_index] = \"1 Very low\" || UKGrid[Intensity_index] = \"2 Low\"), DISTINCTCOUNT(UKGrid[Slot]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#F1EEFF"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E1B4B'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2F2B6B'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
