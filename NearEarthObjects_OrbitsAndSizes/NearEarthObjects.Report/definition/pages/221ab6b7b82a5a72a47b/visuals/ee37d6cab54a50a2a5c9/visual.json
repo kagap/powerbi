@@ -1,0 +1,345 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 96.0,
+    "z": 20,
+    "height": 966.0,
+    "width": 1617.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "42,796 near-Earth asteroids (the orbit classes Aten, Apollo, Amor and Atira) from the JPL Small-Body Database as of 26 October 2026, those with a known absolute magnitude and a first observation. Only 1,244 have a measured diameter; for the other 41,552 the size is estimated from brightness (the absolute magnitude H) with an assumed albedo of 0.14, so it is a rough guess that can be off by a factor of two or more. The year of discovery is the year of the first observation on record, which can include images found later in old archives, so it can be earlier than the official discovery. Potentially hazardous is the JPL flag (an orbit that comes within 0.05 AU of the Earth's and an object larger than about 140 m); it does not say that an impact is expected. The orbit gap is the minimum orbit intersection distance, the closest the two orbits come, in lunar distances (1 AU is 389 lunar distances), not the distance of a predicted pass. In the orbit map every dot is a cell of 0.1 AU by 0.05 eccentricity; the few hundred objects with a semi-major axis above 3.6 AU are off the chart.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "NASA/JPL Solar System Dynamics, Small-Body Database Query API (https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html), NASA data; the API page states no separate licence, please credit the JPL Small-Body Database. Retrieved on 26 October 2026. Prepared: the four near-Earth classes, the year of the first observation, the estimated size (1329 / sqrt(0.14) * 10^(-H/5) kilometres), the orbit gap in lunar distances and bands for size, discovery decade, orbit shape, tilt and orbit certainty (the JPL condition code) were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Objects = COUNTROWS(NearEarthObjects)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Potentially hazardous = CALCULATE(COUNTROWS(NearEarthObjects), NearEarthObjects[Hazard] = \"Potentially hazardous\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share potentially hazardous = DIVIDE(CALCULATE(COUNTROWS(NearEarthObjects), NearEarthObjects[Hazard] = \"Potentially hazardous\"), COUNTROWS(NearEarthObjects))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Larger than 1 km = CALCULATE(COUNTROWS(NearEarthObjects), NearEarthObjects[Size_m] >= 1000)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median size (m) = MEDIAN(NearEarthObjects[Size_m])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average eccentricity = AVERAGE(NearEarthObjects[Eccentricity])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average inclination (degrees) = AVERAGE(NearEarthObjects[Inclination_deg])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average semi-major axis (AU) = AVERAGE(NearEarthObjects[Semi_major_axis_au])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cell semi-major axis = AVERAGE(NearEarthObjects[Cell_a])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Cell eccentricity = AVERAGE(NearEarthObjects[Cell_e])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Closest orbit gap (lunar distances) = MIN(NearEarthObjects[Earth_moid_ld])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "First seen = MIN(NearEarthObjects[Discovery_year])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#DFF7EA"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E211A'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E4A3B'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

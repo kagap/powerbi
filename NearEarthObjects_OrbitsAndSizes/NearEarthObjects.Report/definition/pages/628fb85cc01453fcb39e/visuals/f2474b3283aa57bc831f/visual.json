@@ -1,0 +1,528 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "f2474b3283aa57bc831f",
+  "position": {
+    "x": 24.0,
+    "y": 96.0,
+    "z": 20,
+    "height": 966.0,
+    "width": 1617.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Designation"
+                }
+              },
+              "queryRef": "NearEarthObjects.Designation",
+              "nativeQueryRef": "Designation"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Name"
+                }
+              },
+              "queryRef": "NearEarthObjects.Name",
+              "nativeQueryRef": "Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Orbit_class"
+                }
+              },
+              "queryRef": "NearEarthObjects.Orbit_class",
+              "nativeQueryRef": "Orbit_class"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Hazard"
+                }
+              },
+              "queryRef": "NearEarthObjects.Hazard",
+              "nativeQueryRef": "Hazard"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Abs_magnitude"
+                }
+              },
+              "queryRef": "NearEarthObjects.Abs_magnitude",
+              "nativeQueryRef": "Abs_magnitude"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Size_m"
+                }
+              },
+              "queryRef": "NearEarthObjects.Size_m",
+              "nativeQueryRef": "Size_m"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Size_source"
+                }
+              },
+              "queryRef": "NearEarthObjects.Size_source",
+              "nativeQueryRef": "Size_source"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Semi_major_axis_au"
+                }
+              },
+              "queryRef": "NearEarthObjects.Semi_major_axis_au",
+              "nativeQueryRef": "Semi_major_axis_au"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Eccentricity"
+                }
+              },
+              "queryRef": "NearEarthObjects.Eccentricity",
+              "nativeQueryRef": "Eccentricity"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Inclination_deg"
+                }
+              },
+              "queryRef": "NearEarthObjects.Inclination_deg",
+              "nativeQueryRef": "Inclination_deg"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Perihelion_au"
+                }
+              },
+              "queryRef": "NearEarthObjects.Perihelion_au",
+              "nativeQueryRef": "Perihelion_au"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Aphelion_au"
+                }
+              },
+              "queryRef": "NearEarthObjects.Aphelion_au",
+              "nativeQueryRef": "Aphelion_au"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Earth_moid_au"
+                }
+              },
+              "queryRef": "NearEarthObjects.Earth_moid_au",
+              "nativeQueryRef": "Earth_moid_au"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Earth_moid_ld"
+                }
+              },
+              "queryRef": "NearEarthObjects.Earth_moid_ld",
+              "nativeQueryRef": "Earth_moid_ld"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NearEarthObjects"
+                    }
+                  },
+                  "Property": "Objects"
+                }
+              },
+              "queryRef": "NearEarthObjects.Objects",
+              "nativeQueryRef": "Objects"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFF7EA'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#050D0A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFF7EA'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E211A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFF7EA'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E211A'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFF7EA'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E211A'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFF7EA'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#08130F'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E4A3B'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E4A3B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E211A'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E4A3B'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rows'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFF7EA'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
