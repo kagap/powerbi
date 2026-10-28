@@ -1,0 +1,323 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 108.0,
+    "z": 10,
+    "height": 954.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "26,932 LEGO sets released from 1949 to 2025 as listed in the Rebrickable database (sets announced for 2026 and 2027 are left out so that every year is complete). Rebrickable lists no parts for some items (gear, books, promotional items and others), so the number of parts is empty for them and the averages, medians and sizes use only the sets that have a parts count. The theme is the top-level theme of the set (146 of them, for example Star Wars or City); a set has one theme, and themes were renamed or merged over the years. Years are years of release. The sets are a catalogue of what was released, not of what was sold.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Rebrickable (https://rebrickable.com/downloads/), the files sets.csv and themes.csv, retrieved on 28 October 2026; the files carry no separate licence text and Rebrickable asks to be credited as the source. LEGO is a trademark of the LEGO Group, which does not sponsor or endorse this report. Prepared: the theme tree was walked to the top-level theme, a parts count of zero was left empty, and decade and size bands were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Sets = COUNTROWS(LegoSets)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Total parts (millions) = SUM(LegoSets[Parts]) / 1000000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average parts per set = AVERAGE(LegoSets[Parts])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median parts per set = MEDIAN(LegoSets[Parts])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Largest set (parts) = MAX(LegoSets[Parts])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Themes = DISTINCTCOUNT(LegoSets[Root_theme])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Sets with 1,000 parts or more = CALCULATE(COUNTROWS(LegoSets), LegoSets[Parts] >= 1000)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of sets with 1,000 parts or more = DIVIDE(CALCULATE(COUNTROWS(LegoSets), LegoSets[Parts] >= 1000), COUNT(LegoSets[Parts]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Sets with a parts count = COUNT(LegoSets[Parts])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "First year = MIN(LegoSets[Year])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2A34"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1B2A34'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
