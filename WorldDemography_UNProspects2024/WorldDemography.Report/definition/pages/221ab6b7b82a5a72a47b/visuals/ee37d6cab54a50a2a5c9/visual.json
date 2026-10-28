@@ -1,0 +1,466 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 132.0,
+    "z": 10,
+    "height": 930.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "237 countries and areas for every year from 1950 to 2100, from the United Nations World Population Prospects 2024 (medium variant). The years to 2023 are the UN's estimates, which in many countries rest on censuses, surveys and models rather than a count; the years from 2024 are a projection that assumes paths for fertility, mortality and migration, a scenario and not a forecast. Population is the population on 1 July, in thousands. The world, region and subregion figures for fertility, life expectancy, median age and infant mortality are the UN's own aggregates (the World_, Region_ and Subregion_ columns), so they are not simple averages of the countries; sums of population are sums of the countries. The bubble chart uses the figures of each country. Names are the UN's names (for example China, Hong Kong SAR). Regions follow the UN's geographic regions, with the Americas split into Latin America and the Caribbean and Northern America.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "United Nations, Department of Economic and Social Affairs, Population Division, World Population Prospects 2024, Demographic Indicators, medium variant (https://population.un.org/wpp/); the Population Division publishes the data under the Creative Commons licence CC BY 3.0 IGO (stated from its terms of use; the page was not re-read when this report was made). Retrieved on 28 October 2026. Prepared: only the 237 countries and areas for 1950 to 2100, 22 of the indicators, the region and subregion from the UN's hierarchy, the UN aggregates joined to every country row, and bands for fertility, life expectancy, median age and population size.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Country-years = COUNTROWS(WorldDemography)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Population (millions) = SUM(WorldDemography[Population_thousands]) / 1000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Population 2023 (millions) = CALCULATE(SUM(WorldDemography[Population_thousands]), WorldDemography[Year] = 2023) / 1000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Population 2100 (millions) = CALCULATE(SUM(WorldDemography[Population_thousands]), WorldDemography[Year] = 2100) / 1000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Change 2023 to 2100 = DIVIDE(CALCULATE(SUM(WorldDemography[Population_thousands]), WorldDemography[Year] = 2100), CALCULATE(SUM(WorldDemography[Population_thousands]), WorldDemography[Year] = 2023)) - 1",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "World fertility = AVERAGE(WorldDemography[World_fertility])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "World life expectancy = AVERAGE(WorldDemography[World_life_expectancy])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "World median age = AVERAGE(WorldDemography[World_median_age])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Region fertility = AVERAGE(WorldDemography[Region_fertility])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Region life expectancy = AVERAGE(WorldDemography[Region_life_expectancy])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Region median age = AVERAGE(WorldDemography[Region_median_age])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Subregion median age = AVERAGE(WorldDemography[Subregion_median_age])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Country fertility = AVERAGE(WorldDemography[Fertility])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Country life expectancy = AVERAGE(WorldDemography[Life_expectancy])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Births (millions) = SUM(WorldDemography[Births_thousands]) / 1000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Deaths (millions) = SUM(WorldDemography[Deaths_thousands]) / 1000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "World infant mortality = AVERAGE(WorldDemography[World_infant_mortality])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Region infant mortality = AVERAGE(WorldDemography[Region_infant_mortality])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Countries = DISTINCTCOUNT(WorldDemography[Country])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Life expectancy 2023 = CALCULATE(AVERAGE(WorldDemography[World_life_expectancy]), WorldDemography[Year] = 2023)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fertility 2023 = CALCULATE(AVERAGE(WorldDemography[World_fertility]), WorldDemography[Year] = 2023)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median age 2023 = CALCULATE(AVERAGE(WorldDemography[World_median_age]), WorldDemography[Year] = 2023)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median age 2100 = CALCULATE(AVERAGE(WorldDemography[World_median_age]), WorldDemography[Year] = 2100)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1B2B41"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D7E0EA'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
