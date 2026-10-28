@@ -1,0 +1,323 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 324.0,
+    "y": 81.0,
+    "z": 10,
+    "height": 981.0,
+    "width": 1572.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Nights spent at tourist accommodation establishments in 38 European countries, month by month from January 2013 to December 2025, split into domestic guests (residents of the country) and foreign guests and into three kinds of accommodation: hotels and similar, holiday and other short-stay rentals, and camping and caravan sites. The report starts in 2013 because before that the data does not cover all three kinds of accommodation in all countries, and it stops at the end of 2025 so that every year is complete. The EU totals are not included, so every sum is a sum of the countries listed, and a country that joins the data later (a few start in 2014 or 2017) adds to the totals from then on. The comparison with 2019 compares each country, kind of guest, kind of accommodation and calendar month with the same ones of 2019. Kosovo is shown without prejudice to positions on status.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Eurostat, Nights spent at tourist accommodation establishments, monthly data (tour_occ_nim, https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nim); Eurostat data may be re-used with acknowledgement (see https://ec.europa.eu/eurostat/about-us/policies/copyright). Retrieved on 28 October 2026 through the Eurostat dissemination API. Prepared: the JSON-stat cube was turned into rows, the aggregate rows (EU27, EU28 and others) and the all-accommodation total were dropped, the countries were put into five groups (Southern, Western, Northern, Central and Eastern Europe, and Turkey), and season, era and the 2019 comparison were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Records = COUNTROWS(TourismEurope)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Nights a year (millions) = SUM(TourismEurope[Nights]) / DISTINCTCOUNT(TourismEurope[Year]) / 1000000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Foreign share = DIVIDE(CALCULATE(SUM(TourismEurope[Nights]), TourismEurope[Guests] = \"Foreign guests\"), SUM(TourismEurope[Nights]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Summer share = DIVIDE(CALCULATE(SUM(TourismEurope[Nights]), TourismEurope[Season] = \"3 Summer\"), SUM(TourismEurope[Nights]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of the 2019 level = DIVIDE(SUM(TourismEurope[Nights_comparable]), SUM(TourismEurope[Nights_2019_same_month]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Countries = DISTINCTCOUNT(TourismEurope[Country_code])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Domestic nights a year (millions) = CALCULATE(SUM(TourismEurope[Nights]), TourismEurope[Guests] = \"Domestic guests\") / DISTINCTCOUNT(TourismEurope[Year]) / 1000000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Foreign nights a year (millions) = CALCULATE(SUM(TourismEurope[Nights]), TourismEurope[Guests] = \"Foreign guests\") / DISTINCTCOUNT(TourismEurope[Year]) / 1000000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hotels share = DIVIDE(CALCULATE(SUM(TourismEurope[Nights]), TourismEurope[Accommodation] = \"Hotels and similar\"), SUM(TourismEurope[Nights]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share of annual nights = DIVIDE(SUM(TourismEurope[Nights]), CALCULATE(SUM(TourismEurope[Nights]), REMOVEFILTERS(TourismEurope[Month_name])))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3A44"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EADFC9'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
