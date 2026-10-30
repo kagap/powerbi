@@ -1,0 +1,378 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 279.0,
+    "y": 96.0,
+    "z": 20,
+    "height": 966.0,
+    "width": 1605.0,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "25,278 payloads (satellites, probes and other spacecraft) launched from 1957 to 2025, from Jonathan McDowell's General Catalog of Artificial Space Objects (GCAT). Rocket stages, debris and other catalogued pieces are left out, and so are launches of 2026, so that every year is complete. The country is the state of the owner or operator (the Soviet Union and Russia are separate, European agencies are listed under their own name). The orbit group is a rule of this report applied to the catalogue's canonical perigee and apogee: low Earth orbit is an apogee under 2,000 km, medium Earth orbit a perigee of 2,000 km or more and an apogee under 34,000 km, geostationary and geosynchronous is what GCAT marks as a geostationary-type orbit, and the elliptical group holds the rest (including transfer orbits). Still up means the catalogue lists no decay date for the payload, and decayed or re-entered means it does. The constellation is read from the first letters of the payload name (for example Starlink or OneWeb) and the rocket family from the launch log, so a payload with an unusual name falls under Other. A launch is counted once however many payloads it carried, so payloads per launch measures how much was shared. Masses are the catalogue's best figures, many of them estimates, and the heaviest payloads are Space Shuttle orbiters, which GCAT classes as payloads.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Jonathan C. McDowell, General Catalog of Artificial Space Objects (GCAT), https://planet4589.org/space/gcat/ : the files satcat.tsv, launchlog.tsv and orgs.tsv, data update of 29 October 2026, retrieved on 30 October 2026. No licence text was found on the GCAT pages that were read; the catalogue is the work of Jonathan McDowell and should be credited to him. Prepared: only the objects of type P (payloads) launched up to 2025, the state names from the organisations file, the canonical perigee, apogee, inclination and mass turned into numbers, and bands, the orbit group, the fate, the constellation and the rocket family added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Payloads = COUNTROWS(Satellites)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Launches = DISTINCTCOUNT(Satellites[Launch_id])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Payloads still up = CALCULATE(COUNTROWS(Satellites), Satellites[Fate] = \"Still up\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Share still up = DIVIDE(CALCULATE(COUNTROWS(Satellites), Satellites[Fate] = \"Still up\"), COUNTROWS(Satellites))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Mass launched (tonnes) = SUM(Satellites[Mass_kg]) / 1000",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average mass (kg) = AVERAGE(Satellites[Mass_kg])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Median mass (kg) = MEDIAN(Satellites[Mass_kg])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Countries = DISTINCTCOUNT(Satellites[Country])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average altitude (km) = AVERAGE(Satellites[Altitude_km])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average inclination (degrees) = AVERAGE(Satellites[Inclination])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Starlink payloads = CALCULATE(COUNTROWS(Satellites), Satellites[Constellation] = \"Starlink\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Starlink share = DIVIDE(CALCULATE(COUNTROWS(Satellites), Satellites[Constellation] = \"Starlink\"), COUNTROWS(Satellites))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Heaviest payload (kg) = MAX(Satellites[Mass_kg])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Payloads per launch = DIVIDE(COUNTROWS(Satellites), DISTINCTCOUNT(Satellites[Launch_id]))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "First year = MIN(Satellites[Year])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#E8F1FA"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#143A66'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2F6393'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

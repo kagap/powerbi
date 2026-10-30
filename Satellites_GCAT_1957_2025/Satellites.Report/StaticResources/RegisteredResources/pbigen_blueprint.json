@@ -1,0 +1,70 @@
+{
+  "name": "pbigen blueprint",
+  "dataColors": [
+    "#5CC8FF",
+    "#FF9F1C",
+    "#9BE564",
+    "#F25F5C",
+    "#B388EB",
+    "#FFE066",
+    "#70E1D8",
+    "#E8F1FA"
+  ],
+  "background": "#143A66",
+  "foreground": "#E8F1FA",
+  "tableAccent": "#5CC8FF",
+  "good": "#5CC8FF",
+  "neutral": "#8FB0D0",
+  "bad": "#FF9F1C",
+  "maximum": "#5CC8FF",
+  "center": "#8FB0D0",
+  "minimum": "#FF9F1C",
+  "textClasses": {
+    "callout": {
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#FF9F1C"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#E8F1FA"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#E8F1FA"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#8FB0D0"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#0F3057"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#0A2342"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
