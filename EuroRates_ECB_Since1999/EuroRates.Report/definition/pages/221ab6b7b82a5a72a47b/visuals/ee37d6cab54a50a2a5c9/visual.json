@@ -1,0 +1,378 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ee37d6cab54a50a2a5c9",
+  "position": {
+    "x": 24.0,
+    "y": 81.0,
+    "z": 10,
+    "height": 921.0,
+    "width": 1872.0,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "The euro foreign exchange reference rates published by the European Central Bank: how many units of a foreign currency one euro buys, for 39 currencies on every fixing day from 4 January 1999 to 30 October 2026 (221,702 rates). A higher rate means a stronger euro and a weaker foreign currency. The strength index turns this around: it is 100 at the currency's average of 2015 and rises when the currency gains against the euro, and it is empty for currencies with no 2015 rates. The euro change over the year compares the last fixing of a year with the last fixing of the year before (2026 is the year to 30 October), and the volatility is the standard deviation of the daily changes times the square root of 250 fixing days. Nine currencies were replaced by the euro (the Cypriot pound, Estonian kroon, Lithuanian litas, Latvian lats, Maltese lira, Slovenian tolar, Slovak koruna, Croatian kuna and, from 2026, the Bulgarian lev) and the Russian rouble is no longer published (the last rate is from 1 March 2022). The Icelandic krona was not published from 9 December 2008 to 1 February 2018. A daily change is left empty after a break of more than ten days, and a change over the year is left empty when the year before has no rate. The old Romanian leu and Turkish lira were redenominated in 2005 and are continued here in the new units (the old rate divided by 10,000 and by 1,000,000). The rates are reference rates fixed once a day, not the prices at which banks trade.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to use it",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Open the Filters pane on the right (the funnel tab) to filter by category or date; the selection applies to every page. Click a bar, a slice or a point to cross-filter the other charts, and hover over one to see a small summary card.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data source",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "European Central Bank, euro foreign exchange reference rates, the historical file eurofxref-hist.zip (https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip), retrieved on 30 October 2026. The ECB publishes the rates for free use on its website; its exact terms of reuse were not confirmed, so check its copyright page before reusing the data. Prepared: the wide table was turned into one row for each currency and day, the two redenominated currencies were joined to their new units, and the daily change, the change over the year, the strength index, the status and the region group were added.",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Measures",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fixings = COUNTROWS(EuroRates)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Average rate = AVERAGE(EuroRates[Rate])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Strength index (2015 is 100) = AVERAGE(EuroRates[Strength_index])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Volatility a year = STDEV.P(EuroRates[Daily_change]) * SQRT(250)",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Euro change over the year = AVERAGE(EuroRates[Year_change])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Biggest one-day rise of the euro = MAX(EuroRates[Daily_change])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Biggest one-day fall of the euro = MIN(EuroRates[Daily_change])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Currencies = DISTINCTCOUNT(EuroRates[Currency])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "First fixing = MIN(EuroRates[Date])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Last fixing = MAX(EuroRates[Date])",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "US dollars per euro = CALCULATE(AVERAGE(EuroRates[Rate]), EuroRates[Currency_code] = \"USD\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Pounds per euro = CALCULATE(AVERAGE(EuroRates[Rate]), EuroRates[Currency_code] = \"GBP\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Yen per euro = CALCULATE(AVERAGE(EuroRates[Rate]), EuroRates[Currency_code] = \"JPY\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Swiss francs per euro = CALCULATE(AVERAGE(EuroRates[Rate]), EuroRates[Currency_code] = \"CHF\")",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Euro change for colour = VAR v = AVERAGE(EuroRates[Year_change]) RETURN IF(ISBLANK(v), BLANK(), MAX(-0.3, MIN(0.3, v)))",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#16332A"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FBFDF9'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#CFDCCB'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
